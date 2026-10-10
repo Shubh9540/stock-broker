@@ -40,6 +40,22 @@ export interface TopBarProps {
   logoData?: HeaderData;
 }
 
+export interface BreadcrumbPath {
+  id: string;
+  label: string;
+  url?: string;
+}
+
+export interface BreadcrumbData {
+  title: string;
+  bgImage: string;
+  paths: BreadcrumbPath[];
+}
+
+export interface BreadcrumbProps {
+  data?: BreadcrumbData;
+}
+
 export interface HeroButtonData {
   text: string;
   url: string;
@@ -114,9 +130,61 @@ export interface AboutUsSectionProps {
   hideButton?: boolean;
 }
 
+export interface AboutPageParagraph {
+  id: string;
+  text: string;
+}
+
+export interface AboutPageIntroData {
+  subtitle: string;
+  title1: string;
+  highlightedTitle: string;
+  title2: string;
+  imageMain: string;
+  imageMainAlt: string;
+  imageSecondary: string;
+  imageSecondaryAlt: string;
+  experienceValue: string;
+  experienceLabel: string;
+  paragraphs: AboutPageParagraph[];
+}
+
+export interface AboutPageIntroProps {
+  data?: AboutPageIntroData;
+}
+
 export interface AboutProgressCircleProps {
   item: AboutProgressItem;
   isVisible: boolean;
+}
+
+export interface TeamSocialLink {
+  id: string;
+  icon: string;
+  label: string;
+  url: string;
+}
+
+export interface TeamMember {
+  id: string;
+  name: string;
+  role: string;
+  description: string;
+  image: string;
+  imageAlt: string;
+  socialLinks: TeamSocialLink[];
+}
+
+export interface TeamData {
+  subtitle: string;
+  title1: string;
+  highlightedTitle: string;
+  description: string;
+  members: TeamMember[];
+}
+
+export interface TeamSectionProps {
+  data?: TeamData;
 }
 
 export interface ServiceItem {
@@ -166,6 +234,19 @@ export interface ServicesSectionProps {
   isSlider?: boolean;
 }
 
+export interface ServicesGridData {
+  subtitle: string;
+  title1: string;
+  title2: string;
+  description: string;
+  linkText: string;
+  services: ServiceItem[];
+}
+
+export interface ServicesGridProps {
+  data?: ServicesGridData;
+}
+
 export interface ServiceCardProps {
   service: ServiceItem;
   linkText: string;
@@ -175,9 +256,47 @@ export interface ServiceDetailFeature {
   id: string;
   icon: string;
   title: string;
+  description: string;
 }
 
-export interface ServiceDetailProcessStep {
+export interface ServiceDetailText {
+  id: string;
+  text: string;
+}
+
+export interface ServiceDetailPageData {
+  id: string;
+  breadcrumbTitle: string;
+  breadcrumbLabel: string;
+  overviewLabel: string;
+  title1: string;
+  title2: string;
+  imageMain: string;
+  imageMainAlt: string;
+  overviewText: ServiceDetailText[];
+  featuresLabel: string;
+  featuresTitle1: string;
+  featuresTitle2: string;
+  features: ServiceDetailFeature[];
+  benefitsLabel: string;
+  benefitsTitle1: string;
+  benefitsTitle2: string;
+  benefitsImage: string;
+  benefitsImageAlt: string;
+  benefits: ServiceDetailText[];
+}
+
+export interface ServiceDetailContentProps {
+  data?: ServiceDetailPageData;
+}
+
+export interface LegacyServiceDetailFeature {
+  id: string;
+  icon: string;
+  title: string;
+}
+
+export interface LegacyServiceDetailProcessStep {
   id: string;
   number: string;
   title: string;
@@ -191,12 +310,12 @@ export interface ServiceDetailData {
   title2: string;
   description: string;
   imageMain: string;
-  features: ServiceDetailFeature[];
+  features: LegacyServiceDetailFeature[];
   overviewTitle: string;
   overviewText: string[];
   overviewImage: string;
   processTitle: string;
-  processSteps: ServiceDetailProcessStep[];
+  processSteps: LegacyServiceDetailProcessStep[];
   faqTitle: string;
   faqs: { id: string; question: string; answer: string }[];
   sidebar: {
@@ -235,6 +354,18 @@ export interface TestimonialsData {
 
 export interface TestimonialsSectionProps {
   data?: TestimonialsData;
+}
+
+export interface TestimonialGridData {
+  subtitle: string;
+  title1: string;
+  title2: string;
+  description: string;
+  testimonials: TestimonialItem[];
+}
+
+export interface TestimonialGridProps {
+  data?: TestimonialGridData;
 }
 
 export interface FooterData {
@@ -456,10 +587,12 @@ export interface QuoteData {
 
 export interface StockBrokerTemplateData {
   common: {
-    aboutBreadcrumb?: any;
-    servicesBreadcrumb?: any;
-    contactBreadcrumb?: any;
-    enquiryBreadcrumb?: any;
+    aboutBreadcrumb?: BreadcrumbData;
+    servicesBreadcrumb?: BreadcrumbData;
+    contactBreadcrumb?: BreadcrumbData;
+    enquiryBreadcrumb?: BreadcrumbData;
+    teamBreadcrumb?: BreadcrumbData;
+    testimonialsBreadcrumb?: BreadcrumbData;
     Footer?: FooterData;
   };
   categories: {
@@ -470,10 +603,15 @@ export interface StockBrokerTemplateData {
         Header?: { variants?: { StockBrokerHeader1?: HeaderData } };
         Hero?: { variants?: { StockBrokerHero1?: HeroData } };
         AboutUs?: { variants?: { StockBrokerAboutUs1?: AboutUsData } };
+        AboutPageIntro?: { variants?: { StockBrokerAboutPageIntro1?: AboutPageIntroData } };
+        Team?: { variants?: { StockBrokerTeam1?: TeamData } };
         Services?: { variants?: { StockBrokerServices1?: ServicesData } };
+        ServicesGrid?: { variants?: { StockBrokerServicesGrid1?: ServicesGridData } };
         ServiceDetail?: { variants?: { [key: string]: ServiceDetailData } };
+        ServiceDetails?: { variants?: { [key: string]: ServiceDetailPageData } };
         Process?: { variants?: { StockBrokerProcess1?: ProcessData } };
         Testimonials?: { variants?: { StockBrokerTestimonials1?: TestimonialsData } };
+        TestimonialGrid?: { variants?: { StockBrokerTestimonialGrid1?: TestimonialGridData } };
         Pricing?: { variants?: { StockBrokerPricing1?: PricingData } };
         Faq?: { variants?: { StockBrokerFaq1?: FaqData } };
         Cta?: { variants?: { StockBrokerCta1?: CtaData } };

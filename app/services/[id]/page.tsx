@@ -1,5 +1,5 @@
 import React from 'react';
-import { StockBrokerTemplateData } from '@/types/templates.types';
+import { BreadcrumbData, StockBrokerTemplateData } from '@/types/templates.types';
 import rawData from '@/data/templates.json';
 import { TopBar } from '@/components/common/TopBar';
 import { Header } from '@/components/common/Header';
@@ -20,22 +20,20 @@ export default async function ServiceDetailPage({ params }: { params: Promise<{ 
 
   if (!sectionData || !commonData) return <div className="text-black p-10">Loading Data...</div>;
 
-  // Find matching service data if available, or fallback to first variant
-  let serviceDetailData = sectionData.ServiceDetail?.variants?.[id];
-  if (!serviceDetailData) {
-     const allVariants = Object.values(sectionData.ServiceDetail?.variants || {});
-     serviceDetailData = allVariants[0];
-  }
+  const serviceDetailData = sectionData.ServiceDetails?.variants?.[id];
+  const servicesBreadcrumb = commonData.servicesBreadcrumb;
+  const homePath = servicesBreadcrumb?.paths[0];
+  const servicesPath = servicesBreadcrumb?.paths[1];
 
-  const fullTitle = `${serviceDetailData?.title1 || ''} ${serviceDetailData?.title2 || ''}`.trim() || 'Service Details';
+  if (!serviceDetailData || !servicesBreadcrumb || !homePath || !servicesPath) return null;
 
-  const dynamicBreadcrumb = {
-    title: 'Service Details',
-    bgImage: commonData.servicesBreadcrumb?.bgImage,
+  const dynamicBreadcrumb: BreadcrumbData = {
+    title: serviceDetailData.breadcrumbTitle,
+    bgImage: servicesBreadcrumb.bgImage,
     paths: [
-      { label: 'Home', url: '/' },
-      { label: 'Our Services', url: '/services' },
-      { label: fullTitle }
+      { ...homePath, id: 'breadcrumb-service-detail-home' },
+      { ...servicesPath, id: 'breadcrumb-service-detail-list', url: '/services' },
+      { id: 'breadcrumb-service-detail-current', label: serviceDetailData.breadcrumbLabel }
     ]
   };
 
@@ -48,7 +46,7 @@ export default async function ServiceDetailPage({ params }: { params: Promise<{ 
       </div>
       
       {/* Service Detail Content */}
-      <ServiceDetailContent data={serviceDetailData} serviceId={id} servicesList={sectionData.Services?.variants?.StockBrokerServices1?.services} />
+      <ServiceDetailContent data={serviceDetailData} />
 
       {/* CTA Section */}
       <CtaSection data={sectionData.Cta?.variants?.StockBrokerCta1} />

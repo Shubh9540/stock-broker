@@ -134,49 +134,91 @@
     },
     "aboutBreadcrumb": {
       "title": "About Us",
+      "bgImage": "",
       "paths": [
         {
+          "id": "breadcrumb-about-home",
           "label": "Home",
           "url": "/"
         },
         {
+          "id": "breadcrumb-about-current",
           "label": "About Us"
         }
       ]
     },
     "servicesBreadcrumb": {
       "title": "Our Services",
+      "bgImage": "",
       "paths": [
         {
+          "id": "breadcrumb-services-home",
           "label": "Home",
           "url": "/"
         },
         {
+          "id": "breadcrumb-services-current",
           "label": "Services"
         }
       ]
     },
     "contactBreadcrumb": {
       "title": "Contact Us",
+      "bgImage": "",
       "paths": [
         {
+          "id": "breadcrumb-contact-home",
           "label": "Home",
           "url": "/"
         },
         {
+          "id": "breadcrumb-contact-current",
           "label": "Contact Us"
         }
       ]
     },
     "enquiryBreadcrumb": {
       "title": "Enquiry Now",
+      "bgImage": "",
       "paths": [
         {
+          "id": "breadcrumb-enquiry-home",
           "label": "Home",
           "url": "/"
         },
         {
+          "id": "breadcrumb-enquiry-current",
           "label": "Enquiry Now"
+        }
+      ]
+    },
+    "teamBreadcrumb": {
+      "title": "Our Team",
+      "bgImage": "",
+      "paths": [
+        {
+          "id": "breadcrumb-team-home",
+          "label": "Home",
+          "url": "/"
+        },
+        {
+          "id": "breadcrumb-team-current",
+          "label": "Our Team"
+        }
+      ]
+    },
+    "testimonialsBreadcrumb": {
+      "title": "Testimonials",
+      "bgImage": "",
+      "paths": [
+        {
+          "id": "breadcrumb-testimonials-home",
+          "label": "Home",
+          "url": "/"
+        },
+        {
+          "id": "breadcrumb-testimonials-current",
+          "label": "Testimonials"
         }
       ]
     }
@@ -261,6 +303,11 @@
                   "id": "nl-team",
                   "label": "Team",
                   "url": "/team"
+                },
+                {
+                  "id": "nl-testimonials",
+                  "label": "Testimonials",
+                  "url": "/testimonials"
                 },
                 {
                   "id": "nl-blogs",
@@ -395,6 +442,224 @@
             }
           }
         },
+        "AboutPageIntro": {
+          "variants": {
+            "StockBrokerAboutPageIntro1": {
+              "subtitle": "About Us",
+              "title1": "The Platform of Choice for",
+              "highlightedTitle": "66K+",
+              "title2": "Global Traders",
+              "imageMain": "/about/about1.webp",
+              "imageMainAlt": "Experienced ORVEXA market professional",
+              "imageSecondary": "/about/about2.webp",
+              "imageSecondaryAlt": "ORVEXA trader analysing financial markets",
+              "experienceValue": "10+",
+              "experienceLabel": "Years of Experience",
+              "paragraphs": [
+                {
+                  "id": "about-page-paragraph-1",
+                  "text": "At ORVEXA, we are committed to providing a secure, transparent and technology-driven trading environment, empowering traders to connect, learn and grow with confidence."
+                },
+                {
+                  "id": "about-page-paragraph-2",
+                  "text": "At ORVEXA, we are committed to providing a secure, transparent and technology-driven trading environment, empowering traders to connect, learn and grow with confidence."
+                },
+                {
+                  "id": "about-page-paragraph-3",
+                  "text": "At ORVEXA, we are committed to providing a secure, transparent and technology-driven trading environment, empowering traders to connect, learn and grow with confidence."
+                },
+                {
+                  "id": "about-page-paragraph-4",
+                  "text": "At ORVEXA, we are committed to providing a secure, transparent and technology-driven trading environment, empowering traders to connect, learn and grow with confidence."
+                },
+                {
+                  "id": "about-page-paragraph-5",
+                  "text": "At ORVEXA, we are committed to providing a secure, transparent and technology-driven trading environment, empowering traders to connect, learn and grow with confidence."
+                }
+              ]
+            }
+          }
+        },
+        "Team": {
+          "variants": {
+            "StockBrokerTeam1": {
+              "subtitle": "Our Team",
+              "title1": "Meet Our",
+              "highlightedTitle": "Expert Team",
+              "description": "A team of experienced professionals dedicated to helping you make smarter investment decisions and achieve your financial goals.",
+              "members": [
+                {
+                  "id": "team-rohit-sharma",
+                  "name": "Rohit Sharma",
+                  "role": "Chief Executive Officer",
+                  "description": "15+ years of experience in investment advisory and wealth management.",
+                  "image": "/team/1.webp",
+                  "imageAlt": "Rohit Sharma, Chief Executive Officer",
+                  "socialLinks": [
+                    {
+                      "id": "rohit-linkedin",
+                      "icon": "FaLinkedinIn",
+                      "label": "Rohit Sharma on LinkedIn",
+                      "url": "https://www.linkedin.com"
+                    },
+                    {
+                      "id": "rohit-twitter",
+                      "icon": "FaTwitter",
+                      "label": "Rohit Sharma on Twitter",
+                      "url": "https://twitter.com"
+                    },
+                    {
+                      "id": "rohit-email",
+                      "icon": "FaEnvelope",
+                      "label": "Email Rohit Sharma",
+                      "url": "mailto:info@xyz.com"
+                    }
+                  ]
+                },
+                {
+                  "id": "team-priya-mehta",
+                  "name": "Priya Mehta",
+                  "role": "Chief Investment Officer",
+                  "description": "Specializes in equity research and portfolio management with a focus on long-term growth.",
+                  "image": "/team/2.webp",
+                  "imageAlt": "Priya Mehta, Chief Investment Officer",
+                  "socialLinks": [
+                    {
+                      "id": "priya-linkedin",
+                      "icon": "FaLinkedinIn",
+                      "label": "Priya Mehta on LinkedIn",
+                      "url": "https://www.linkedin.com"
+                    },
+                    {
+                      "id": "priya-twitter",
+                      "icon": "FaTwitter",
+                      "label": "Priya Mehta on Twitter",
+                      "url": "https://twitter.com"
+                    },
+                    {
+                      "id": "priya-email",
+                      "icon": "FaEnvelope",
+                      "label": "Email Priya Mehta",
+                      "url": "mailto:info@xyz.com"
+                    }
+                  ]
+                },
+                {
+                  "id": "team-amit-verma",
+                  "name": "Amit Verma",
+                  "role": "Head of Research",
+                  "description": "Leads market research and provides actionable insights for smarter investment decisions.",
+                  "image": "/team/3.webp",
+                  "imageAlt": "Amit Verma, Head of Research",
+                  "socialLinks": [
+                    {
+                      "id": "amit-linkedin",
+                      "icon": "FaLinkedinIn",
+                      "label": "Amit Verma on LinkedIn",
+                      "url": "https://www.linkedin.com"
+                    },
+                    {
+                      "id": "amit-twitter",
+                      "icon": "FaTwitter",
+                      "label": "Amit Verma on Twitter",
+                      "url": "https://twitter.com"
+                    },
+                    {
+                      "id": "amit-email",
+                      "icon": "FaEnvelope",
+                      "label": "Email Amit Verma",
+                      "url": "mailto:info@xyz.com"
+                    }
+                  ]
+                },
+                {
+                  "id": "team-neha-kapoor",
+                  "name": "Neha Kapoor",
+                  "role": "Financial Planning Head",
+                  "description": "Helps clients build personalized financial plans for a secure and brighter future.",
+                  "image": "/team/4.webp",
+                  "imageAlt": "Neha Kapoor, Financial Planning Head",
+                  "socialLinks": [
+                    {
+                      "id": "neha-linkedin",
+                      "icon": "FaLinkedinIn",
+                      "label": "Neha Kapoor on LinkedIn",
+                      "url": "https://www.linkedin.com"
+                    },
+                    {
+                      "id": "neha-twitter",
+                      "icon": "FaTwitter",
+                      "label": "Neha Kapoor on Twitter",
+                      "url": "https://twitter.com"
+                    },
+                    {
+                      "id": "neha-email",
+                      "icon": "FaEnvelope",
+                      "label": "Email Neha Kapoor",
+                      "url": "mailto:info@xyz.com"
+                    }
+                  ]
+                },
+                {
+                  "id": "team-karan-malhotra",
+                  "name": "Karan Malhotra",
+                  "role": "Risk Management Lead",
+                  "description": "Expert in risk analysis and portfolio optimization to protect and grow client investments.",
+                  "image": "/team/5.webp",
+                  "imageAlt": "Karan Malhotra, Risk Management Lead",
+                  "socialLinks": [
+                    {
+                      "id": "karan-linkedin",
+                      "icon": "FaLinkedinIn",
+                      "label": "Karan Malhotra on LinkedIn",
+                      "url": "https://www.linkedin.com"
+                    },
+                    {
+                      "id": "karan-twitter",
+                      "icon": "FaTwitter",
+                      "label": "Karan Malhotra on Twitter",
+                      "url": "https://twitter.com"
+                    },
+                    {
+                      "id": "karan-email",
+                      "icon": "FaEnvelope",
+                      "label": "Email Karan Malhotra",
+                      "url": "mailto:info@xyz.com"
+                    }
+                  ]
+                },
+                {
+                  "id": "team-sneha-rathi",
+                  "name": "Sneha Rathi",
+                  "role": "Client Relationship Manager",
+                  "description": "Dedicated to building strong client relationships and delivering tailored investment solutions.",
+                  "image": "/team/6.webp",
+                  "imageAlt": "Sneha Rathi, Client Relationship Manager",
+                  "socialLinks": [
+                    {
+                      "id": "sneha-linkedin",
+                      "icon": "FaLinkedinIn",
+                      "label": "Sneha Rathi on LinkedIn",
+                      "url": "https://www.linkedin.com"
+                    },
+                    {
+                      "id": "sneha-twitter",
+                      "icon": "FaTwitter",
+                      "label": "Sneha Rathi on Twitter",
+                      "url": "https://twitter.com"
+                    },
+                    {
+                      "id": "sneha-email",
+                      "icon": "FaEnvelope",
+                      "label": "Email Sneha Rathi",
+                      "url": "mailto:info@xyz.com"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
         "Services": {
           "variants": {
             "StockBrokerServices1": {
@@ -448,6 +713,73 @@
                   "imageAlt": "Investment research and financial advisory report",
                   "icon": "FaSearchDollar",
                   "url": "/services/research-advisory"
+                }
+              ]
+            }
+          }
+        },
+        "ServicesGrid": {
+          "variants": {
+            "StockBrokerServicesGrid1": {
+              "subtitle": "Our Services",
+              "title1": "A Complete Range of",
+              "title2": "Investment Services",
+              "description": "From equities to derivatives, our expert-driven solutions are designed to help you trade, invest and grow with confidence.",
+              "linkText": "Learn More",
+              "services": [
+                {
+                  "id": "service-grid-equity-trading",
+                  "title": "Equity Trading",
+                  "description": "Access to NSE & BSE with advanced trading tools.",
+                  "image": "/service/1.webp",
+                  "imageAlt": "Equity market chart analysis",
+                  "icon": "FaChartLine",
+                  "url": "/services/equity-trading"
+                },
+                {
+                  "id": "service-grid-mutual-funds",
+                  "title": "Mutual Funds",
+                  "description": "Invest in top-performing funds for long-term growth.",
+                  "image": "/service/2.webp",
+                  "imageAlt": "Growing investment represented by coins and a plant",
+                  "icon": "FaHandHoldingUsd",
+                  "url": "/services/mutual-funds"
+                },
+                {
+                  "id": "service-grid-ipo-investments",
+                  "title": "IPO Investments",
+                  "description": "Get early access to promising opportunities.",
+                  "image": "/service/3.webp",
+                  "imageAlt": "IPO investment opportunity",
+                  "icon": "FaBuilding",
+                  "url": "/services/ipo-investments"
+                },
+                {
+                  "id": "service-grid-derivatives",
+                  "title": "Derivatives",
+                  "description": "Trade F&O with expert research and insights.",
+                  "image": "/service/4.webp",
+                  "imageAlt": "Derivatives market chart analysis",
+                  "icon": "FaChartBar",
+                  "url": "/services/derivatives"
+                },
+                {
+                  "id": "service-grid-research-advisory",
+                  "title": "Research & Advisory",
+                  "description": "Data-driven advice to make informed decisions.",
+                  "image": "/service/5.webp",
+                  "imageAlt": "Investment research and financial advisory report",
+                  "icon": "FaSearchDollar",
+                  "url": "/services/research-advisory"
+                },
+                {
+                  "id": "service-grid-portfolio-management",
+                  "title": "Portfolio Management",
+                  "description": "Customized strategies to help you grow and protect wealth.",
+                  "image": "/service/6.webp",
+                  "imageAlt": "Portfolio management with financial growth chart and coins",
+                  "icon": "FaCog",
+                  "url": "/services/portfolio-management"
                 }
               ]
             }
@@ -1384,6 +1716,90 @@
             }
           }
         },
+        "TestimonialGrid": {
+          "variants": {
+            "StockBrokerTestimonialGrid1": {
+              "subtitle": "Testimonials",
+              "title1": "What Our Clients Say",
+              "title2": "About Us",
+              "description": "Trusted by thousands of investors for a smarter and better trading experience.",
+              "testimonials": [
+                {
+                  "id": "testimonial-grid-rohit-mehta",
+                  "name": "Rohit Mehta",
+                  "location": "Active Investor",
+                  "quote": "ORVEXA has made investing simple and convenient. Their platform is easy to use and the support team is always helpful. Highly recommended!",
+                  "rating": 5,
+                  "avatar": "/team/1.webp"
+                },
+                {
+                  "id": "testimonial-grid-priya-sharma",
+                  "name": "Priya Sharma",
+                  "location": "Equity Trader",
+                  "quote": "Great trading experience with excellent research and advisory support. The platform gives me confidence to make better decisions.",
+                  "rating": 5,
+                  "avatar": "/team/2.webp"
+                },
+                {
+                  "id": "testimonial-grid-amit-verma",
+                  "name": "Amit Verma",
+                  "location": "Long-term Investor",
+                  "quote": "The ORVEXA team provides valuable market insights and timely guidance. It has been a great platform for my long-term investment journey.",
+                  "rating": 5,
+                  "avatar": "/team/3.webp"
+                },
+                {
+                  "id": "testimonial-grid-neha-kapoor",
+                  "name": "Neha Kapoor",
+                  "location": "Mutual Fund Investor",
+                  "quote": "The investment guidance is clear, practical and easy to understand. I feel more confident about building a balanced portfolio for the future.",
+                  "rating": 5,
+                  "avatar": "/team/4.webp"
+                },
+                {
+                  "id": "testimonial-grid-vikram-singh",
+                  "name": "Vikram Singh",
+                  "location": "Derivatives Trader",
+                  "quote": "Fast execution, useful research reports and responsive client support make ORVEXA a dependable partner for my trading needs.",
+                  "rating": 5,
+                  "avatar": "/team/5.webp"
+                },
+                {
+                  "id": "testimonial-grid-ananya-patel",
+                  "name": "Ananya Patel",
+                  "location": "New Investor",
+                  "quote": "Opening my account and starting my first investment was smooth and secure. The team supported me throughout the entire process.",
+                  "rating": 5,
+                  "avatar": "/team/6.webp"
+                },
+                {
+                  "id": "testimonial-grid-arjun-khanna",
+                  "name": "Arjun Khanna",
+                  "location": "Portfolio Investor",
+                  "quote": "The platform combines useful market information with straightforward tools that make portfolio decisions easier and more confident.",
+                  "rating": 5,
+                  "avatar": "/team/1.webp"
+                },
+                {
+                  "id": "testimonial-grid-meera-joshi",
+                  "name": "Meera Joshi",
+                  "location": "Growth Investor",
+                  "quote": "ORVEXA offers professional guidance and dependable support. The experience has helped me stay focused on my long-term financial goals.",
+                  "rating": 5,
+                  "avatar": "/team/2.webp"
+                },
+                {
+                  "id": "testimonial-grid-rahul-saxena",
+                  "name": "Rahul Saxena",
+                  "location": "Active Trader",
+                  "quote": "Research insights are timely and easy to follow. I appreciate the transparent approach and quick assistance whenever I need support.",
+                  "rating": 5,
+                  "avatar": "/team/3.webp"
+                }
+              ]
+            }
+          }
+        },
         "Cta": {
           "variants": {
             "StockBrokerCta1": {
@@ -2110,24 +2526,48 @@
           "about": {
             "components": [
               {
-                "key": "AboutUs",
-                "component": "StockBrokerAboutUs1"
+                "key": "AboutPageIntro",
+                "component": "StockBrokerAboutPageIntro1"
+              },
+              {
+                "key": "Process",
+                "component": "StockBrokerProcess1"
               },
               {
                 "key": "WhyChooseUs",
                 "component": "StockBrokerWhyChooseUs1"
+              },
+              {
+                "key": "Cta",
+                "component": "StockBrokerCta1"
+              }
+            ]
+          },
+          "team": {
+            "components": [
+              {
+                "key": "Team",
+                "component": "StockBrokerTeam1"
+              }
+            ]
+          },
+          "testimonials": {
+            "components": [
+              {
+                "key": "TestimonialGrid",
+                "component": "StockBrokerTestimonialGrid1"
               }
             ]
           },
           "services": {
             "components": [
               {
-                "key": "Services",
-                "component": "StockBrokerServices1"
+                "key": "ServicesGrid",
+                "component": "StockBrokerServicesGrid1"
               },
               {
-                "key": "WhyChooseUs",
-                "component": "StockBrokerWhyChooseUs1"
+                "key": "Cta",
+                "component": "StockBrokerCta1"
               }
             ]
           },
@@ -2165,7 +2605,37 @@
         "TopBar",
         "Header",
         "Breadcrumb",
-        "AboutUs",
+        "AboutPageIntro",
+        "Process",
+        "WhyChooseUs",
+        "Cta",
+        "Footer"
+      ]
+    },
+    "team": {
+      "components": [
+        "TopBar",
+        "Header",
+        "Breadcrumb",
+        "Team",
+        "Footer"
+      ]
+    },
+    "testimonials": {
+      "components": [
+        "TopBar",
+        "Header",
+        "Breadcrumb",
+        "TestimonialGrid",
+        "Footer"
+      ]
+    },
+    "services": {
+      "components": [
+        "TopBar",
+        "Header",
+        "Breadcrumb",
+        "ServicesGrid",
         "Cta",
         "Footer"
       ]

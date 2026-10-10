@@ -1,231 +1,128 @@
-'use client';
-
-import React, { useState } from 'react';
-import { ServiceDetailData } from '@/types/templates.types';
-import Link from 'next/link';
-import { FiArrowRight, FiClock, FiPhoneCall, FiPlay, FiPlus, FiX } from 'react-icons/fi';
-import { FaLaptopCode, FaMobileAlt, FaUsers, FaCheckCircle, FaLightbulb, FaChartLine, FaShieldAlt } from 'react-icons/fa';
+import React from 'react';
+import {
+  FaBuilding,
+  FaChartLine,
+  FaCheckCircle,
+  FaCog,
+  FaHandHoldingUsd,
+  FaLaptop,
+  FaSearchDollar,
+  FaShieldAlt,
+  FaUserTie,
+} from 'react-icons/fa';
+import { ServiceDetailContentProps } from '@/types/templates.types';
 
 const renderIcon = (iconName: string) => {
   switch (iconName) {
-    case 'FaLaptopCode': return <FaLaptopCode />;
-    case 'FaMobileAlt': return <FaMobileAlt />;
-    case 'FaUsers': return <FaUsers />;
-    case 'FaCheckCircle': return <FaCheckCircle />;
-    case 'FaLightbulb': return <FaLightbulb />;
-    case 'FaChartLine': return <FaChartLine />;
-    case 'FaShieldAlt': return <FaShieldAlt />;
-    default: return <FaLaptopCode />;
+    case 'FaChartLine':
+      return <FaChartLine />;
+    case 'FaLaptop':
+      return <FaLaptop />;
+    case 'FaSearchDollar':
+      return <FaSearchDollar />;
+    case 'FaUserTie':
+      return <FaUserTie />;
+    case 'FaShieldAlt':
+      return <FaShieldAlt />;
+    case 'FaHandHoldingUsd':
+      return <FaHandHoldingUsd />;
+    case 'FaBuilding':
+      return <FaBuilding />;
+    case 'FaCog':
+      return <FaCog />;
+    default:
+      return null;
   }
 };
 
-export const ServiceDetailContent = ({ data, serviceId, servicesList }: { data?: ServiceDetailData, serviceId?: string, servicesList?: any[] }) => {
-  const [openFaq, setOpenFaq] = useState<string | null>(data?.faqs?.[0]?.id || null);
-  const [isVideoOpen, setIsVideoOpen] = useState(false);
-
+export const ServiceDetailContent = ({ data }: ServiceDetailContentProps) => {
   if (!data) return null;
 
   return (
     <>
-      <section className="w-full py-16 bg-white relative">
-        <div className="max-w-[1300px] mx-auto px-4 md:px-6 lg:px-8 flex flex-col lg:flex-row gap-10 items-start">
-          
-          {/* Left Side: Sidebar */}
-          <div className="w-full lg:w-[30%] flex flex-col gap-8 sticky top-6">
-            
-            {/* All Services Menu */}
-            <div className="bg-[#f5f8fc] rounded-xl p-6 border border-gray-100">
-              <h3 className="text-xl font-bold text-[#061a3a] mb-6">All Services</h3>
-              <div className="flex flex-col gap-3">
-                {servicesList?.map(service => {
-                  const isActive = serviceId ? service.url.includes(serviceId) : false;
-                  return (
-                    <Link 
-                      key={service.id} 
-                      href={service.url} 
-                      className={`flex items-center justify-between p-4 rounded-xl text-[14px] font-bold transition-all ${
-                        isActive ? 'bg-[#0b6cf0] text-white shadow-md' : 'bg-white text-gray-600 hover:text-[#0b6cf0] border border-gray-100 hover:border-blue-100'
-                      }`}
-                    >
-                      {service.title}
-                      <FiArrowRight className={isActive ? 'text-white' : 'text-[#0b6cf0]'} />
-                    </Link>
-                  );
-                })}
-              </div>
+      <section className="w-full bg-white py-8 lg:py-12">
+        <div className="mx-auto grid w-full max-w-7xl grid-cols-1 items-center gap-8 px-4 sm:px-6 lg:grid-cols-2 lg:gap-12 lg:px-8">
+          <div className="aspect-[4/3] overflow-hidden rounded-lg bg-[#edf4ff]">
+            <img src={data.imageMain} alt={data.imageMainAlt} className="h-full w-full object-cover" />
+          </div>
+
+          <div>
+            <div className="mb-3 flex items-center gap-3">
+              <span className="h-0.5 w-8 bg-[#0b6cf0]" />
+              <span className="text-sm font-bold text-[#0b6cf0]">{data.overviewLabel}</span>
             </div>
-            
+            <h1 className="text-3xl font-extrabold leading-tight tracking-tight text-[#061a3a] sm:text-4xl lg:text-5xl">
+              <span className="block">{data.title1}</span>
+              <span className="text-[#0b6cf0]">{data.title2}</span>
+            </h1>
 
-
-            {/* Need Help CTA */}
-            <div className="relative rounded-2xl overflow-hidden shadow-lg aspect-[4/5] bg-gray-900 group">
-              <img src="/portfolio/ui/2.webp" alt="Need Help" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-80" />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#061a3a] via-[#061a3a]/60 to-transparent"></div>
-              <div className="absolute inset-0 flex flex-col justify-end p-8 text-white">
-                <h3 className="text-[28px] font-extrabold leading-[1.2] mb-3">Need Help?<br/>Call Us</h3>
-                <p className="text-gray-200 text-[13px] mb-6 max-w-[90%] leading-relaxed">
-                  Get expert consultation for your project requirements.
+            <div className="mt-5 space-y-4">
+              {data.overviewText.map((paragraph) => (
+                <p key={paragraph.id} className="text-sm leading-relaxed text-[#526784] sm:text-base">
+                  {paragraph.text}
                 </p>
-                <a href="tel:+100000000" className="bg-white text-[#061a3a] font-bold text-[14px] rounded-full py-3.5 px-6 flex items-center justify-center gap-3 hover:bg-[#0b6cf0] hover:text-white transition-all w-max shadow-xl">
-                   <FiPhoneCall className="text-[16px] text-[#0b6cf0] group-hover:text-white transition-colors" /> +1 00000000
-                </a>
-              </div>
+              ))}
             </div>
-
           </div>
-
-          {/* Right Side: Main Content */}
-          <div className="w-full lg:w-[70%]">
-             
-
-
-             {/* Title & Top Description */}
-             <h1 className="text-[40px] md:text-[48px] font-extrabold text-[#061a3a] mb-3 leading-[1.1]">{data.title1}</h1>
-             <p className="text-[#64748b] text-[15px] leading-relaxed mb-6">
-               Modern and responsive solutions that create a strong brand presence and better user experience.
-             </p>
-             
-             {/* Main Image */}
-             <div className="w-full aspect-[21/9] md:aspect-[16/7] rounded-3xl overflow-hidden mb-10 shadow-[0_10px_40px_rgba(0,0,0,0.06)] bg-gray-100">
-               <img src="/portfolio/app/1.webp" alt={data.title1} className="w-full h-full object-cover" />
-             </div>
-
-             {/* Content Overview */}
-             <h2 className="text-3xl font-extrabold text-[#061a3a] flex items-center gap-4 mb-5">
-                {data.title1} <span className="w-12 h-[2px] bg-[#0b6cf0]"></span>
-             </h2>
-             <div className="text-[#64748b] text-[15px] leading-relaxed mb-12 space-y-4">
-               <p>Our {data.title1.toLowerCase()} services focus on creating modern, responsive, and user-friendly solutions that help your business stand out online. We design experiences that are visually appealing, easy to navigate, and optimized for all devices, ensuring a seamless experience for your visitors.</p>
-               <p>Whether you need a corporate portal, business application, or a custom design, our team delivers solutions tailored to your goals. We combine creativity with the latest technology to build solutions that not only look great but also perform exceptionally well.</p>
-             </div>
-
-             {/* Key Benefits Grid */}
-             <h3 className="text-[26px] font-extrabold text-[#061a3a] mb-6">Key Benefits Of Our {data.title1} Services</h3>
-             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-14">
-                {[
-                  { title: "Modern Design", desc: "Unique designs that reflect your brand identity.", icon: "FaLaptopCode" },
-                  { title: "Fully Responsive", desc: "Optimized for all devices including desktop & mobile.", icon: "FaMobileAlt" },
-                  { title: "User-Friendly", desc: "Easy navigation for better engagement.", icon: "FaUsers" },
-                  { title: "SEO Friendly", desc: "Built with SEO best practices to improve visibility.", icon: "FaCheckCircle" }
-                ].map((feat, i) => (
-                  <div key={i} className="bg-[#f5f8fc] rounded-2xl p-5 border border-gray-100 hover:border-blue-100 transition-colors shadow-sm">
-                    <div className="w-16 h-16 bg-[#edf4ff] rounded-2xl flex items-center justify-center text-[#0b6cf0] text-3xl mb-5">
-                       {renderIcon(feat.icon)}
-                    </div>
-                    <h4 className="text-[#061a3a] font-bold text-[15px] mb-2">{feat.title}</h4>
-                    <p className="text-[#64748b] text-[12px] leading-relaxed">{feat.desc}</p>
-                  </div>
-                ))}
-             </div>
-
-             {/* Process Section */}
-             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10 items-center mb-16">
-               <div 
-                 className="relative aspect-[4/3] rounded-3xl overflow-hidden shadow-xl group cursor-pointer bg-gray-100"
-                 onClick={() => setIsVideoOpen(true)}
-               >
-                 <img src="/portfolio/ui/1.webp" alt="Process" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
-                 <div className="absolute inset-0 bg-[#061a3a]/20 flex items-center justify-center transition-colors group-hover:bg-[#061a3a]/40">
-                   <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center text-[#0b6cf0] text-2xl pl-1 shadow-[0_0_0_6px_rgba(255,255,255,0.2)] group-hover:shadow-[0_0_0_10px_rgba(255,255,255,0.3)] transition-all">
-                     <FiPlay />
-                   </div>
-                 </div>
-               </div>
-               <div>
-                 <h3 className="text-[26px] font-extrabold text-[#061a3a] mb-8">Our {data.title1} Process</h3>
-                 <div className="space-y-6">
-                   {[
-                     { title: "Requirement Analysis", desc: "We understand your business goals and design needs." },
-                     { title: "Creative Design", desc: "Create unique and visually appealing designs." },
-                     { title: "Development", desc: "Convert designs into fully functional websites." },
-                     { title: "Testing & Launch", desc: "Ensure quality, performance and a smooth launch." }
-                   ].map((step, idx) => (
-                      <div key={idx} className="flex gap-4 group">
-                        <div className="w-10 h-10 rounded-full bg-[#0b6cf0] text-white flex items-center justify-center font-bold shrink-0 shadow-md group-hover:scale-110 transition-transform text-sm">
-                          0{idx+1}
-                        </div>
-                        <div className="pt-0.5">
-                          <h4 className="text-[#061a3a] font-bold text-[15px] mb-1">{step.title}</h4>
-                          <p className="text-[#64748b] text-[13px]">{step.desc}</p>
-                        </div>
-                      </div>
-                   ))}
-                 </div>
-               </div>
-             </div>
-
-             {/* Why Choose Us */}
-             <h3 className="text-[26px] font-extrabold text-[#061a3a] mb-6">Why Choose Our {data.title1} Services?</h3>
-             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-16">
-                {[
-                  { title: "Tailored Solutions", desc: "Custom designs tailored to your business needs.", icon: "FaLightbulb" },
-                  { title: "High Performance", desc: "Fast loading and optimized websites.", icon: "FaChartLine" },
-                  { title: "Ongoing Support", desc: "Continuous support and maintenance.", icon: "FaShieldAlt" }
-                ].map((feat, i) => (
-                  <div key={i} className="bg-white rounded-2xl p-6 border border-gray-100 shadow-[0_4px_20px_rgba(0,0,0,0.03)] flex flex-col items-center text-center hover:shadow-[0_8px_30px_rgba(0,0,0,0.06)] transition-all">
-                     <div className="w-[72px] h-[72px] bg-[#edf4ff] rounded-2xl flex items-center justify-center text-[#0b6cf0] text-[32px] mb-6 border border-blue-50">
-                       {renderIcon(feat.icon)}
-                     </div>
-                     <h4 className="text-[#061a3a] font-bold text-[15px] mb-2">{feat.title}</h4>
-                     <p className="text-[#64748b] text-[13px] leading-relaxed">{feat.desc}</p>
-                  </div>
-                ))}
-             </div>
-
-             {/* FAQ */}
-             <h3 className="text-[26px] font-extrabold text-[#061a3a] mb-6">Frequently Asked Questions</h3>
-             <div className="flex flex-col gap-3">
-               {[
-                 { id: "1", q: "How long does it take to design a website?", a: "The timeline varies based on the complexity and requirements of the project. A standard website takes about 4-6 weeks from initial consultation to final launch." },
-                 { id: "2", q: "Will my website be mobile-friendly?", a: "Yes, all our websites are fully responsive and optimized to look great and perform well on all devices, including mobile phones and tablets." },
-                 { id: "3", q: "Do you provide website maintenance services?", a: "Absolutely. We offer ongoing maintenance and support packages to ensure your website remains secure, up-to-date, and performs optimally." },
-                 { id: "4", q: "Can you redesign an existing website?", a: "Yes, we can revamp your existing website with a fresh, modern design while improving user experience and SEO performance." }
-               ].map(faq => {
-                 const isOpen = openFaq === faq.id;
-                 return (
-                   <div key={faq.id} className="border border-gray-100 rounded-xl overflow-hidden bg-white shadow-sm">
-                     <button onClick={() => setOpenFaq(isOpen ? null : faq.id)} className="w-full flex items-center justify-between p-5 text-left font-bold text-[#061a3a] text-[15px] hover:bg-[#f5f8fc] transition-colors">
-                        {faq.q}
-                        <FiArrowRight className={`text-gray-400 transition-transform ${isOpen ? 'rotate-90 text-[#0b6cf0]' : ''}`} />
-                     </button>
-                     {isOpen && (
-                       <div className="p-5 pt-0 text-[14px] text-[#64748b] leading-relaxed bg-white">
-                         {faq.a}
-                       </div>
-                     )}
-                   </div>
-                 )
-               })}
-             </div>
-
-          </div>
-
         </div>
       </section>
 
-      {/* Video Modal Popup */}
-      {isVideoOpen && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 px-4">
-          <div className="relative w-full max-w-5xl aspect-video bg-black rounded-2xl overflow-hidden shadow-2xl">
-            {/* Close Button */}
-            <button 
-              onClick={() => setIsVideoOpen(false)}
-              className="absolute top-4 right-4 z-10 w-10 h-10 bg-white/10 hover:bg-white/20 text-white rounded-full flex items-center justify-center transition-colors"
-            >
-              <FiPlus className="rotate-45 text-2xl" />
-            </button>
-            {/* Video Iframe (Study-related placeholder) */}
-            <iframe 
-              className="w-full h-full"
-              src="https://www.youtube.com/embed/0x5mf8BUJZY?autoplay=1" 
-              title="Study Video" 
-              frameBorder="0" 
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-              allowFullScreen
-            ></iframe>
+      <section className="w-full bg-[#f2f7ff] py-8 lg:py-12">
+        <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="mx-auto mb-8 max-w-4xl text-center">
+            <div className="mb-3 flex items-center justify-center gap-3">
+              <span className="h-0.5 w-8 bg-[#0b6cf0]" />
+              <span className="text-sm font-bold text-[#0b6cf0]">{data.featuresLabel}</span>
+              <span className="h-0.5 w-8 bg-[#0b6cf0]" />
+            </div>
+            <h2 className="text-3xl font-extrabold leading-tight text-[#061a3a] sm:text-4xl">
+              {data.featuresTitle1} <span className="text-[#0b6cf0]">{data.featuresTitle2}</span>
+            </h2>
+          </div>
+
+          <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
+            {data.features.map((feature) => (
+              <article key={feature.id} className="rounded-lg border border-[#dce7f3] bg-white p-5 text-center shadow-sm">
+                <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-[#e8f2ff] text-2xl text-[#0b6cf0]">
+                  {renderIcon(feature.icon)}
+                </div>
+                <h3 className="mt-4 text-base font-extrabold text-[#061a3a]">{feature.title}</h3>
+                <p className="mt-2 text-sm leading-relaxed text-[#64748b]">{feature.description}</p>
+              </article>
+            ))}
           </div>
         </div>
-      )}
+      </section>
+
+      <section className="w-full bg-white py-8 lg:py-12">
+        <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="mx-auto mb-8 max-w-4xl text-center">
+            <div className="mb-3 flex items-center justify-center gap-3">
+              <span className="h-0.5 w-8 bg-[#0b6cf0]" />
+              <span className="text-sm font-bold text-[#0b6cf0]">{data.benefitsLabel}</span>
+              <span className="h-0.5 w-8 bg-[#0b6cf0]" />
+            </div>
+            <h2 className="text-3xl font-extrabold leading-tight text-[#061a3a] sm:text-4xl">
+              {data.benefitsTitle1} <span className="text-[#0b6cf0]">{data.benefitsTitle2}</span>
+            </h2>
+          </div>
+
+          <div className="grid grid-cols-1 items-center gap-8 lg:grid-cols-2 lg:gap-12">
+            <div className="aspect-[16/9] overflow-hidden rounded-lg bg-[#edf4ff]">
+              <img src={data.benefitsImage} alt={data.benefitsImageAlt} className="h-full w-full object-cover" />
+            </div>
+
+            <div className="space-y-4">
+              {data.benefits.map((benefit) => (
+                <div key={benefit.id} className="flex items-start gap-3">
+                  <FaCheckCircle className="mt-1 shrink-0 text-lg text-[#0b6cf0]" />
+                  <span className="text-sm font-medium leading-relaxed text-[#526784] sm:text-base">{benefit.text}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
     </>
   );
 };

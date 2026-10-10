@@ -4,7 +4,7 @@ import rawData from '@/data/templates.json';
 import { TopBar } from '@/components/common/TopBar';
 import { Header } from '@/components/common/Header';
 import { Breadcrumb } from '@/components/common/Breadcrumb';
-import { ServicesSection } from '@/components/sections/ServicesSection';
+import { ServicesGrid } from '@/components/sections/ServicesGrid';
 import { CtaSection } from '@/components/sections/CtaSection';
 import { Footer } from '@/components/common/Footer';
 
@@ -25,8 +25,8 @@ export default function ServicesPage() {
         <Breadcrumb data={commonData.servicesBreadcrumb} />
       </div>
       
-      {/* Services Section */}
-      <ServicesSection data={sectionData.Services?.variants?.StockBrokerServices1} hideButton={true} />
+      {/* Services Grid */}
+      <ServicesGrid data={sectionData.ServicesGrid?.variants?.StockBrokerServicesGrid1} />
 
       {/* CTA Section */}
       <CtaSection data={sectionData.Cta?.variants?.StockBrokerCta1} />

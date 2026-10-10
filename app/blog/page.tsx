@@ -19,9 +19,10 @@ export default function BlogsPage() {
   // Let's create a breadcrumb for the blogs page
   const breadcrumbData = {
     title: 'Our Blogs',
+    bgImage: commonData.aboutBreadcrumb?.bgImage ?? '',
     paths: [
-      { label: 'Home', url: '/' },
-      { label: 'Blog' }
+      { id: 'breadcrumb-blog-home', label: 'Home', url: '/' },
+      { id: 'breadcrumb-blog-current', label: 'Blog' }
     ]
   };
 

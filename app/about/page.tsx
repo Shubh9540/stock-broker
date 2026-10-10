@@ -4,7 +4,7 @@ import { TopBar } from '@/components/common/TopBar';
 import { Header } from '@/components/common/Header';
 import rawData from '@/data/templates.json';
 import { Breadcrumb } from '@/components/common/Breadcrumb';
-import { AboutUsSection } from '@/components/sections/AboutUsSection';
+import { AboutPageIntro } from '@/components/sections/AboutPageIntro';
 import { CtaSection } from '@/components/sections/CtaSection';
 import { WhyChooseUsSection } from '@/components/sections/WhyChooseUsSection';
 import { ProcessSection } from '@/components/sections/ProcessSection';
@@ -27,15 +27,15 @@ export default function Page() {
         <Breadcrumb data={commonData.aboutBreadcrumb} />
       </div>
       
-      {/* About Us Section */}
-      <AboutUsSection data={sectionData.AboutUs?.variants?.StockBrokerAboutUs1} hideButton={true} />
+      {/* About Page Intro */}
+      <AboutPageIntro data={sectionData.AboutPageIntro?.variants?.StockBrokerAboutPageIntro1} />
 
+       {/* Why Choose Us Section */}
+      <WhyChooseUsSection data={sectionData.whyChooseUs?.variants?.StockBrokerWhyChooseUs1} />
       {/* Process Section */}
       <ProcessSection data={sectionData.Process?.variants?.StockBrokerProcess1} />
 
-      {/* Why Choose Us Section */}
-      <WhyChooseUsSection data={sectionData.whyChooseUs?.variants?.StockBrokerWhyChooseUs1} />
-
+     
       {/* CTA Section */}
       <CtaSection data={sectionData.Cta?.variants?.StockBrokerCta1} />
 

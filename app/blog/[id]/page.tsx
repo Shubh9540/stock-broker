@@ -33,10 +33,11 @@ export default async function BlogDetailPage({ params }: { params: Promise<{ id:
   // Create breadcrumb data for the specific blog
   const breadcrumbData = {
     title: currentBlog.title,
+    bgImage: commonData.aboutBreadcrumb?.bgImage ?? '',
     paths: [
-      { label: 'Home', url: '/' },
-      { label: 'Blog', url: '/blog' },
-      { label: 'Blog Details' }
+      { id: 'breadcrumb-blog-detail-home', label: 'Home', url: '/' },
+      { id: 'breadcrumb-blog-detail-list', label: 'Blog', url: '/blog' },
+      { id: 'breadcrumb-blog-detail-current', label: 'Blog Details' }
     ]
   };
 

@@ -24,10 +24,10 @@ export default function PricingPage() {
         <Header data={sectionData.Header?.variants?.StockBrokerHeader1} />
         <Breadcrumb data={{
           title: "Our Packages",
-          bgImage: commonData.aboutBreadcrumb?.bgImage, // Using about breadcrumb bg
+          bgImage: commonData.aboutBreadcrumb?.bgImage ?? '',
           paths: [
-            { label: "Home", url: "/" },
-            { label: "Our Packages" }
+            { id: "breadcrumb-pricing-home", label: "Home", url: "/" },
+            { id: "breadcrumb-pricing-current", label: "Our Packages" }
           ]
         }} />
       </div>

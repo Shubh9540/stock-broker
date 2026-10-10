@@ -23,10 +23,10 @@ export default function QuotePage() {
       <Header data={sectionData.Header?.variants?.StockBrokerHeader1} />
       <Breadcrumb data={{
         title: "Get A Quotes",
-        bgImage: commonData.aboutBreadcrumb?.bgImage,
+        bgImage: commonData.aboutBreadcrumb?.bgImage ?? '',
         paths: [
-          { label: "Home", url: "/" },
-          { label: "Get A Quotes" }
+          { id: "breadcrumb-quote-home", label: "Home", url: "/" },
+          { id: "breadcrumb-quote-current", label: "Get A Quotes" }
         ]
       }} />
       

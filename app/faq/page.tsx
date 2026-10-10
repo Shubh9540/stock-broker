@@ -24,10 +24,10 @@ export default function FaqPage() {
         <Header data={sectionData.Header?.variants?.StockBrokerHeader1} />
         <Breadcrumb data={{
           title: "FAQ",
-          bgImage: commonData.aboutBreadcrumb?.bgImage, // Using about breadcrumb bg
+          bgImage: commonData.aboutBreadcrumb?.bgImage ?? '',
           paths: [
-            { label: "Home", url: "/" },
-            { label: "FAQ" }
+            { id: "breadcrumb-faq-home", label: "Home", url: "/" },
+            { id: "breadcrumb-faq-current", label: "FAQ" }
           ]
         }} />
       </div>

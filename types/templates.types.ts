@@ -386,6 +386,40 @@ export interface FooterProps {
   data?: FooterData;
 }
 
+export interface NotFoundData {
+  code: string;
+  title: string;
+  description: string;
+  buttonText: string;
+  buttonUrl: string;
+}
+
+export interface NotFoundSectionProps {
+  data?: NotFoundData;
+}
+
+export interface TemplateComponentItem {
+  key: string;
+  component: string;
+}
+
+export interface TemplateComponentPage {
+  components: TemplateComponentItem[];
+}
+
+export interface TemplateComponentsData {
+  shared: {
+    Topbar: string;
+    Header: string;
+    Footer: string;
+  };
+  pages: Record<string, TemplateComponentPage>;
+}
+
+export interface PageComponentRegistry {
+  components: string[];
+}
+
 export interface WhyChooseUsFeature {
   id: string;
   icon: string;
@@ -673,11 +707,12 @@ export interface StockBrokerTemplateData {
     teamBreadcrumb?: BreadcrumbData;
     testimonialsBreadcrumb?: BreadcrumbData;
     blogsBreadcrumb?: BreadcrumbData;
+    notFound?: NotFoundData;
     Footer?: FooterData;
   };
   categories: {
     StockBroker: {
-      templateComponents?: any;
+      templateComponents?: TemplateComponentsData;
       sections: {
         TopBar?: { variants?: { StockBrokerTopBar1?: TopBarData } };
         Header?: { variants?: { StockBrokerHeader1?: HeaderData } };
@@ -701,4 +736,5 @@ export interface StockBrokerTemplateData {
       };
     };
   };
+  pages: Record<string, PageComponentRegistry>;
 }

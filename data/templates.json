@@ -116,6 +116,13 @@
         "address": "123 Main St, New York, NY, USA"
       }
     },
+    "notFound": {
+      "code": "404",
+      "title": "Oops! Page Not Found",
+      "description": "The page you are looking for might have been removed, had its name changed, or is temporarily unavailable.",
+      "buttonText": "Back to Home",
+      "buttonUrl": "/"
+    },
     "aboutBreadcrumb": {
       "title": "About Us",
       "bgImage": "",
@@ -2946,12 +2953,35 @@
                 "component": "StockBrokerEnquiry1"
               }
             ]
+          },
+          "notFound": {
+            "components": [
+              {
+                "key": "NotFoundSection",
+                "component": "NotFoundSection"
+              }
+            ]
           }
         }
       }
     }
   },
   "pages": {
+    "home": {
+      "components": [
+        "TopBar",
+        "Header",
+        "HeroSection",
+        "AboutUs",
+        "Services",
+        "WhyChooseUs",
+        "Process",
+        "Cta",
+        "Testimonials",
+        "Blogs",
+        "Footer"
+      ]
+    },
     "about": {
       "components": [
         "TopBar",
@@ -3035,6 +3065,14 @@
         "Header",
         "Breadcrumb",
         "EnquirySection",
+        "Footer"
+      ]
+    },
+    "not-found": {
+      "components": [
+        "TopBar",
+        "Header",
+        "NotFoundSection",
         "Footer"
       ]
     }

@@ -18,7 +18,7 @@ export default async function ServiceDetailPage({ params }: { params: Promise<{ 
   const sectionData = templateData?.categories?.StockBroker?.sections;
   const commonData = templateData?.common;
 
-  if (!sectionData || !commonData) return <div className="text-black p-10">Loading Data...</div>;
+  if (!sectionData || !commonData) return null;
 
   const serviceDetailData = sectionData.ServiceDetails?.variants?.[id];
   const servicesBreadcrumb = commonData.servicesBreadcrumb;
@@ -47,9 +47,6 @@ export default async function ServiceDetailPage({ params }: { params: Promise<{ 
       
       {/* Service Detail Content */}
       <ServiceDetailContent data={serviceDetailData} />
-
-      {/* CTA Section */}
-      <CtaSection data={sectionData.Cta?.variants?.StockBrokerCta1} />
 
       <Footer data={commonData.Footer} />
     </main>

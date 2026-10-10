@@ -1,101 +1,130 @@
 import React from 'react';
-import { BlogItem } from '@/types/templates.types';
 import Link from 'next/link';
-import { FaCalendarAlt, FaUser, FaClock, FaArrowRight } from 'react-icons/fa';
+import {
+  FaCalendarAlt,
+  FaCheck,
+  FaChevronRight,
+  FaClock,
+  FaQuoteLeft,
+  FaUser,
+} from 'react-icons/fa';
+import { BlogDetailContentProps } from '@/types/templates.types';
 
-export const BlogDetailContent = ({ blog, recentBlogs, sidebarCta }: { blog: BlogItem, recentBlogs: BlogItem[], sidebarCta?: any }) => {
+export const BlogDetailContent = ({ data }: BlogDetailContentProps) => {
+  if (!data) return null;
+
   return (
-    <section className="w-full py-10 md:py-8 bg-white relative">
-      <div className="max-w-[1250px] mx-auto px-4 md:px-6 lg:px-8 flex flex-col lg:flex-row gap-10 lg:gap-12">
+    <section className="w-full bg-white py-8 lg:py-12">
+      <div className="mx-auto grid w-full max-w-7xl grid-cols-1 items-start gap-8 px-4 sm:px-6 lg:grid-cols-[minmax(0,2fr)_minmax(18rem,0.8fr)] lg:px-8">
+        <article className="min-w-0">
+          <span className="inline-flex rounded bg-[#edf4ff] px-3 py-1 text-xs font-bold text-[#0b6cf0]">{data.category}</span>
 
-        {/* Left Side: Main Content */}
-        <div className="w-full lg:w-2/3">
-
-          {/* Badge */}
-          <div className="inline-flex items-center gap-2 bg-[var(--color-primary)] text-white px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider mb-6">
-            <span className="w-1.5 h-1.5 rounded-full bg-white"></span>
-            {blog.category}
-          </div>
-
-          {/* Title */}
-          <h1 className="text-3xl md:text-5xl font-extrabold text-[#061a3a] leading-tight mb-6">
-            {blog.title}
+          <h1 className="mt-4 text-3xl font-extrabold leading-tight tracking-tight text-[#061a3a] sm:text-4xl lg:text-5xl">
+            <span className="block">{data.title1}</span>
+            <span className="text-[#0b6cf0]">{data.title2}</span>
           </h1>
+          <p className="mt-4 max-w-3xl text-sm leading-relaxed text-[#526784] sm:text-base">{data.description}</p>
 
-          {/* Meta Info */}
-          <div className="flex flex-wrap items-center gap-6 text-sm text-gray-500 font-semibold mb-8">
-            <div className="flex items-center gap-2">
-              <FaCalendarAlt className="text-[var(--color-primary)]" />
-              {blog.date}
-            </div>
-            <div className="flex items-center gap-2">
-              <FaUser className="text-[var(--color-primary)]" />
-              By Admin
-            </div>
-            <div className="flex items-center gap-2">
-              <FaClock className="text-[var(--color-primary)]" />
-              5 Min Read
-            </div>
+          <div className="mt-5 flex flex-wrap items-center gap-x-6 gap-y-3 text-sm font-medium text-[#526784]">
+            <span className="flex items-center gap-2"><FaUser className="text-[#0b6cf0]" />{data.authorLabel}</span>
+            <span className="flex items-center gap-2"><FaCalendarAlt className="text-[#0b6cf0]" />{data.date}</span>
+            <span className="flex items-center gap-2"><FaClock className="text-[#0b6cf0]" />{data.readTime}</span>
           </div>
 
-          {/* Featured Image */}
-          <div className="w-full aspect-[21/9] rounded-2xl overflow-hidden shadow-lg mb-10">
-            <img src={blog.image} alt={blog.title} className="w-full h-full object-cover" />
+          <div className="mt-6 aspect-[16/9] overflow-hidden rounded-lg bg-[#edf4ff]">
+            <img src={data.image} alt={data.imageAlt} className="h-full w-full object-cover" />
           </div>
 
-          {/* Blog Content */}
-          <div className="prose prose-lg max-w-none text-gray-500 text-sm md:text-base leading-relaxed">
-            <p className="mb-8">
-              {blog.description}
-            </p>
-            <p className="mb-8">
-              {blog.content?.intro || 'Technology issues can be inconvenient, costly, and disruptive to your daily routine.'}
-            </p>
+          <p className="mt-5 text-sm leading-relaxed text-[#526784] sm:text-base">{data.introText}</p>
 
-            {blog.content?.sections?.map((section, idx) => (
-              <React.Fragment key={idx}>
-                <h3 className="text-xl md:text-2xl font-bold text-[#061a3a] mb-4 mt-8">{section.heading}</h3>
-                <p className="mb-4">
-                  {section.text}
-                </p>
-              </React.Fragment>
-            ))}
-          </div>
+          {data.articleSections.map((section) => (
+            <div key={section.id} className="mt-7">
+              <h2 className="text-2xl font-extrabold leading-tight text-[#061a3a] sm:text-3xl">{section.title}</h2>
+              <p className="mt-3 text-sm leading-relaxed text-[#526784] sm:text-base">{section.text}</p>
+            </div>
+          ))}
 
-        </div>
+          <blockquote className="mt-7 flex gap-4 rounded-r-lg border-l-4 border-[#0b6cf0] bg-[#edf5ff] p-5 sm:p-6">
+            <FaQuoteLeft className="mt-1 shrink-0 text-2xl text-[#0b6cf0]" />
+            <p className="text-base font-semibold leading-relaxed text-[#305d9f] sm:text-lg">{data.quote}</p>
+          </blockquote>
 
-        {/* Right Side: Sidebar */}
-        <div className="w-full lg:w-1/3 flex flex-col gap-8">
-
-          {/* Recent Blogs */}
-          <div className="bg-[var(--color-bg-alt)] rounded-2xl p-6 md:p-8 border border-gray-200">
-            <h4 className="text-xl font-bold text-[#061a3a] mb-6">Recent Blogs</h4>
-            <div className="flex flex-col gap-5">
-              {recentBlogs.map(rb => (
-                <Link key={rb.id} href={rb.url} className="flex items-center gap-4 group">
-                  <div className="w-20 h-16 rounded-lg overflow-hidden shrink-0 shadow-sm">
-                    <img src={rb.image} alt={rb.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" />
+          <div className="mt-7">
+            <h2 className="text-2xl font-extrabold leading-tight text-[#061a3a] sm:text-3xl">{data.benefitsTitle}</h2>
+            <div className="mt-5 grid grid-cols-1 overflow-hidden rounded-lg border border-[#dce7f3] sm:grid-cols-3">
+              {data.benefits.map((benefit, index) => (
+                <div key={benefit.id} className={`p-5 ${index > 0 ? 'border-t border-[#dce7f3] sm:border-l sm:border-t-0' : ''}`}>
+                  <div className="flex items-center gap-3">
+                    <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#0b6cf0] text-sm text-white"><FaCheck /></span>
+                    <h3 className="font-extrabold text-[#061a3a]">{benefit.title}</h3>
                   </div>
-                  <div className="flex-1 flex flex-col justify-center">
-                    <h5 className="text-[#061a3a] font-bold text-xs md:text-sm leading-tight mb-2 group-hover:text-[var(--color-primary)] transition-colors line-clamp-2">
-                      {rb.title}
-                    </h5>
-                    <div className="flex items-center gap-1.5 text-[10px] text-gray-400 font-semibold uppercase tracking-wider">
-                      <FaCalendarAlt className="text-[var(--color-primary)]" />
-                      {rb.date}
-                    </div>
+                  <p className="mt-3 text-sm leading-relaxed text-[#526784]">{benefit.description}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div className="mt-7">
+            <h2 className="text-2xl font-extrabold leading-tight text-[#061a3a] sm:text-3xl">{data.tipsTitle}</h2>
+            <div className="mt-5 space-y-4">
+              {data.tips.map((tip) => (
+                <div key={tip.id} className="flex items-start gap-4">
+                  <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#eaf3ff] text-sm font-extrabold text-[#0b6cf0]">{tip.number}</span>
+                  <p className="pt-2 text-sm leading-relaxed text-[#526784] sm:text-base"><strong className="text-[#061a3a]">{tip.title}</strong> — {tip.description}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <p className="mt-7 border-b border-[#dce7f3] pb-7 text-sm leading-relaxed text-[#526784] sm:text-base">{data.closingText}</p>
+        </article>
+
+        <aside className="flex w-full flex-col gap-6 lg:sticky lg:top-6 lg:self-start">
+          <div className="rounded-lg border border-[#dce7f3] bg-white p-5 shadow-sm">
+            <h2 className="text-xl font-extrabold text-[#061a3a]">{data.recentPostsTitle}</h2>
+            <div className="mt-5 divide-y divide-[#e7eef7]">
+              {data.recentPosts.map((post) => (
+                <Link key={post.id} href={post.url} className="group flex gap-3 py-4 first:pt-0 last:pb-0">
+                  <div className="h-16 w-20 shrink-0 overflow-hidden rounded-md bg-[#edf4ff]">
+                    <img src={post.image} alt={post.imageAlt} className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105" />
                   </div>
-                  <div className="shrink-0 text-gray-300 group-hover:text-[var(--color-primary)] transition-colors pl-2">
-                    <FaArrowRight className="text-sm" />
+                  <div className="min-w-0">
+                    <h3 className="line-clamp-2 text-sm font-extrabold leading-tight text-[#061a3a] transition-colors group-hover:text-[#0b6cf0]">{post.title}</h3>
+                    <span className="mt-2 flex items-center gap-2 text-xs text-[#64748b]"><FaCalendarAlt className="text-[#0b6cf0]" />{post.date}</span>
                   </div>
                 </Link>
               ))}
             </div>
           </div>
 
+          <div className="rounded-lg border border-[#dce7f3] bg-white p-5 shadow-sm">
+            <h2 className="text-xl font-extrabold text-[#061a3a]">{data.categoriesTitle}</h2>
+            <div className="mt-4 divide-y divide-[#e7eef7]">
+              {data.categories.map((category, index) => (
+                <Link key={category.id} href={category.url} className={`flex items-center justify-between px-2 py-3 text-sm font-medium transition-colors hover:text-[#0b6cf0] ${index === 0 ? 'rounded-md bg-[#edf5ff] font-bold text-[#0b6cf0]' : 'text-[#526784]'}`}>
+                  <span>{category.label}</span>
+                  <FaChevronRight className="text-xs" />
+                </Link>
+              ))}
+            </div>
+          </div>
 
-        </div>
-
+          <div className="rounded-lg bg-gradient-to-br from-[#edf6ff] to-white p-6 shadow-sm">
+            <div className="flex items-center gap-3">
+              <span className="h-0.5 w-8 bg-[#0b6cf0]" />
+              <span className="text-sm font-bold text-[#0b6cf0]">{data.sidebarCta.subtitle}</span>
+            </div>
+            <h2 className="mt-4 text-2xl font-extrabold leading-tight text-[#061a3a]">
+              <span className="block">{data.sidebarCta.title1}</span>
+              <span>{data.sidebarCta.title2}</span>
+            </h2>
+            <p className="mt-4 text-sm leading-relaxed text-[#526784]">{data.sidebarCta.description}</p>
+            <Link href={data.sidebarCta.buttonUrl} className="mt-5 inline-flex items-center gap-3 rounded-md bg-[#0b6cf0] px-6 py-3 text-sm font-bold text-white transition-colors hover:bg-[#0757c7]">
+              {data.sidebarCta.buttonText}
+              <FaChevronRight className="text-xs" />
+            </Link>
+          </div>
+        </aside>
       </div>
     </section>
   );

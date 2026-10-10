@@ -14,7 +14,7 @@ export default function EnquiryPage() {
   const sectionData = templateData?.categories?.StockBroker?.sections;
   const commonData = templateData?.common;
 
-  if (!sectionData || !commonData) return <div className="text-black p-10">Loading Data...</div>;
+  if (!sectionData || !commonData) return null;
 
   return (
     <main className="bg-white">
@@ -22,7 +22,6 @@ export default function EnquiryPage() {
       <Header data={sectionData.Header?.variants?.StockBrokerHeader1} />
       <Breadcrumb data={commonData.enquiryBreadcrumb} />
       
-      {/* Enquiry Section */}
       <EnquirySection data={sectionData.enquiry?.variants?.StockBrokerEnquiry1} />
 
       <Footer data={commonData.Footer} />

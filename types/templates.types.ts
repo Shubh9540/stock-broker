@@ -316,8 +316,6 @@ export interface ServiceDetailData {
   overviewImage: string;
   processTitle: string;
   processSteps: LegacyServiceDetailProcessStep[];
-  faqTitle: string;
-  faqs: { id: string; question: string; answer: string }[];
   sidebar: {
     quoteForm: {
       title: string;
@@ -371,6 +369,7 @@ export interface TestimonialGridProps {
 export interface FooterData {
   logo: string;
   logoAlt: string;
+  logoUrl: string;
   brandTitle: string;
   copyrightText: string;
   description: string;
@@ -381,7 +380,6 @@ export interface FooterData {
   quickLinks: { id: string; label: string; url: string }[];
   servicesLinks: { id: string; label: string; url: string }[];
   contactInfo: { address: string; phone: string; email: string };
-  legalLinks: { id: string; label: string; url: string }[];
 }
 
 export interface FooterProps {
@@ -410,54 +408,128 @@ export interface WhyChooseUsSectionProps {
   data?: WhyChooseUsData;
 }
 
-export interface ContactData {
-  subtitle: string;
-  title1: string;
-  title2: string;
+export interface ContactHighlightItem {
+  id: string;
+  icon: string;
+  title: string;
   description: string;
-  contactInfo: {
-    phoneTitle: string;
-    phone: string;
-    emailTitle: string;
-    email: string;
-    addressTitle: string;
-    address: string;
-    hoursTitle: string;
-    hoursLine1: string;
-    hoursLine2: string;
+}
+
+export interface ContactServiceOption {
+  id: string;
+  label: string;
+  value: string;
+}
+
+export interface ContactInfoLine {
+  id: string;
+  text: string;
+}
+
+export interface ContactInfoItem {
+  id: string;
+  icon: string;
+  title: string;
+  lines: ContactInfoLine[];
+}
+
+export interface ContactData {
+  intro: {
+    eyebrow: string;
+    title: string;
+    titleHighlight: string;
+    description: string;
+    highlights: ContactHighlightItem[];
   };
   form: {
+    eyebrow: string;
+    helperText: string;
+    fullNamePlaceholder: string;
+    phonePlaceholder: string;
+    emailPlaceholder: string;
+    servicePlaceholder: string;
+    messagePlaceholder: string;
+    buttonText: string;
+    privacyText: string;
+    successMessage: string;
+    servicesList: ContactServiceOption[];
+  };
+  contactPanel: {
+    eyebrow: string;
+    title1: string;
+    titleHighlight: string;
+    description: string;
+    items: ContactInfoItem[];
+  };
+  location: {
+    eyebrow: string;
     title: string;
     description: string;
     buttonText: string;
-    servicesList: string[];
+    buttonUrl: string;
+    mapUrl: string;
+    mapTitle: string;
   };
-  mapUrl: string;
-  image?: string;
-  infoBoxes?: {
-    icon: string;
-    title: string;
-    desc1: string;
-    desc2: string;
-  }[];
+}
+
+export interface ContactSectionProps {
+  data?: ContactData;
+}
+
+export interface EnquiryFeatureItem {
+  id: string;
+  icon: string;
+  title: string;
+  description: string;
+}
+
+export interface EnquirySelectOption {
+  id: string;
+  label: string;
+  value: string;
 }
 
 export interface EnquiryData {
-  subtitle: string;
-  title1: string;
-  title2: string;
-  description: string;
-  features: {
+  intro: {
+    eyebrow: string;
     title: string;
+    titleHighlight: string;
     description: string;
-  }[];
-  form: {
+    highlights: EnquiryFeatureItem[];
+  };
+  vision: {
+    eyebrow: string;
     title1: string;
     title2: string;
     description: string;
-    buttonText: string;
-    servicesList: string[];
   };
+  priority: {
+    eyebrow: string;
+    title1: string;
+    title2: string;
+    description: string;
+    features: EnquiryFeatureItem[];
+  };
+  form: {
+    eyebrow: string;
+    title: string;
+    description: string;
+    fullNamePlaceholder: string;
+    phonePlaceholder: string;
+    emailPlaceholder: string;
+    servicePlaceholder: string;
+    investmentPlaceholder: string;
+    messagePlaceholder: string;
+    buttonText: string;
+    privacyText: string;
+    successMessage: string;
+    servicesList: EnquirySelectOption[];
+    investmentTypes: EnquirySelectOption[];
+  };
+}
+
+export interface EnquirySectionProps {
+  data?: EnquiryData;
 }
 
 export interface CtaData {
@@ -503,6 +575,7 @@ export interface BlogsData {
   loadMoreText: string;
   button: { text: string; url: string };
   blogs: BlogItem[];
+  pageBlogs: BlogItem[];
   sidebarCta?: {
     title1: string;
     title2: string;
@@ -517,72 +590,77 @@ export interface BlogsSectionProps {
   isPage?: boolean;
 }
 
-export interface PricingPlan {
+export interface BlogDetailTextSection {
   id: string;
-  name: string;
-  badge: string;
-  icon: string;
-  price: string;
-  period: string;
-  description: string;
-  features: string[];
-  footerText: string;
-  buttonText: string;
-  buttonUrl: string;
-  isPopular?: boolean;
+  title: string;
+  text: string;
 }
 
-export interface PricingData {
-  subtitle: string;
-  title1: string;
-  title2: string;
-  description: string;
-  plans: PricingPlan[];
-}
-
-
-export interface FaqItem {
+export interface BlogDetailBenefit {
   id: string;
-  question: string;
-  answer: string;
-}
-
-export interface FaqData {
-  subtitle: string;
-  title1: string;
-  title2: string;
-  description: string;
-  image: string;
-  faqs: FaqItem[];
-}
-
-
-export interface QuoteFeature {
-  id: string;
-  icon: string;
   title: string;
   description: string;
 }
 
-export interface QuoteData {
-  subtitle: string;
+export interface BlogDetailTip {
+  id: string;
+  number: string;
+  title: string;
+  description: string;
+}
+
+export interface BlogDetailRecentPost {
+  id: string;
+  image: string;
+  imageAlt: string;
+  title: string;
+  date: string;
+  url: string;
+}
+
+export interface BlogDetailCategory {
+  id: string;
+  label: string;
+  url: string;
+}
+
+export interface BlogDetailPageData {
+  id: string;
+  breadcrumbTitle: string;
+  breadcrumbLabel: string;
+  category: string;
   title1: string;
   title2: string;
   description: string;
-  features: QuoteFeature[];
+  authorLabel: string;
+  date: string;
+  readTime: string;
   image: string;
-  floatingBox: {
-    icon: string;
-    text1: string;
-    text2: string;
-  };
-  form: {
-    title: string;
-    titleHighlight: string;
+  imageAlt: string;
+  introText: string;
+  articleSections: BlogDetailTextSection[];
+  quote: string;
+  benefitsTitle: string;
+  benefits: BlogDetailBenefit[];
+  tipsTitle: string;
+  tips: BlogDetailTip[];
+  closingText: string;
+  recentPostsTitle: string;
+  recentPosts: BlogDetailRecentPost[];
+  categoriesTitle: string;
+  categories: BlogDetailCategory[];
+  sidebarCta: {
+    subtitle: string;
+    title1: string;
+    title2: string;
     description: string;
-    budgets: string[];
     buttonText: string;
+    buttonUrl: string;
   };
+}
+
+export interface BlogDetailContentProps {
+  data?: BlogDetailPageData;
 }
 
 export interface StockBrokerTemplateData {
@@ -593,6 +671,7 @@ export interface StockBrokerTemplateData {
     enquiryBreadcrumb?: BreadcrumbData;
     teamBreadcrumb?: BreadcrumbData;
     testimonialsBreadcrumb?: BreadcrumbData;
+    blogsBreadcrumb?: BreadcrumbData;
     Footer?: FooterData;
   };
   categories: {
@@ -612,13 +691,11 @@ export interface StockBrokerTemplateData {
         Process?: { variants?: { StockBrokerProcess1?: ProcessData } };
         Testimonials?: { variants?: { StockBrokerTestimonials1?: TestimonialsData } };
         TestimonialGrid?: { variants?: { StockBrokerTestimonialGrid1?: TestimonialGridData } };
-        Pricing?: { variants?: { StockBrokerPricing1?: PricingData } };
-        Faq?: { variants?: { StockBrokerFaq1?: FaqData } };
         Cta?: { variants?: { StockBrokerCta1?: CtaData } };
         Blogs?: { variants?: { StockBrokerBlogs1?: BlogsData } };
+        BlogDetails?: { variants?: { [key: string]: BlogDetailPageData } };
         whyChooseUs?: { variants?: { StockBrokerWhyChooseUs1?: WhyChooseUsData } };
         contact?: { variants?: { StockBrokerContact1?: ContactData } };
-        Quote?: { variants?: { StockBrokerQuote1?: QuoteData } };
         enquiry?: { variants?: { StockBrokerEnquiry1?: EnquiryData } };
       };
     };

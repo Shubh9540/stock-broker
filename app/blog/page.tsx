@@ -14,24 +14,14 @@ export default function BlogsPage() {
   const sectionData = templateData?.categories?.StockBroker?.sections;
   const commonData = templateData?.common;
 
-  if (!sectionData || !commonData) return <div className="text-black p-10">Loading Data...</div>;
-
-  // Let's create a breadcrumb for the blogs page
-  const breadcrumbData = {
-    title: 'Our Blogs',
-    bgImage: commonData.aboutBreadcrumb?.bgImage ?? '',
-    paths: [
-      { id: 'breadcrumb-blog-home', label: 'Home', url: '/' },
-      { id: 'breadcrumb-blog-current', label: 'Blog' }
-    ]
-  };
+  if (!sectionData || !commonData) return null;
 
   return (
     <main className="bg-[var(--color-bg-main)] min-h-screen flex flex-col">
       <TopBar data={sectionData.TopBar?.variants?.StockBrokerTopBar1} logoData={sectionData.Header?.variants?.StockBrokerHeader1} />
       <Header data={sectionData.Header?.variants?.StockBrokerHeader1} />
       
-      <Breadcrumb data={breadcrumbData} />
+      <Breadcrumb data={commonData.blogsBreadcrumb} />
       
       {/* Blogs Section with isPage=true */}
       <BlogsSection data={sectionData.Blogs?.variants?.StockBrokerBlogs1} isPage={true} />

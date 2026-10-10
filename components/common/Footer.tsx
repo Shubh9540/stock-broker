@@ -35,13 +35,15 @@ export const Footer = ({ data }: FooterProps) => {
     <footer className="w-full bg-[#061a3a] text-white">
       <div className="mx-auto grid max-w-7xl grid-cols-1 gap-10 px-4 py-10 md:grid-cols-2 md:px-6 lg:grid-cols-4 lg:gap-8 lg:px-8 lg:py-12">
         <div className="lg:pr-6">
-          <Image
-            src={data.logo}
-            alt={data.logoAlt}
-            width={320}
-            height={100}
-            className="h-auto w-64 object-contain"
-          />
+          <Link href={data.logoUrl} className="inline-block" aria-label={data.logoAlt}>
+            <Image
+              src={data.logo}
+              alt={data.logoAlt}
+              width={320}
+              height={100}
+              className="h-auto w-64 object-contain"
+            />
+          </Link>
           <p className="mt-5 max-w-sm text-sm leading-6 text-white/75 sm:text-base">
             {data.description}
           </p>
@@ -117,33 +119,19 @@ export const Footer = ({ data }: FooterProps) => {
         <div className="mx-auto flex max-w-7xl flex-col gap-5 px-4 py-5 text-center md:px-6 lg:flex-row lg:items-center lg:justify-between lg:px-8 lg:text-left">
           <p className="text-xs text-white/70 sm:text-sm">{data.copyrightText}</p>
 
-          <div className="flex flex-col items-center gap-5 sm:flex-row sm:justify-center">
-            <div className="flex flex-wrap items-center justify-center gap-x-5 gap-y-2">
-              {data.legalLinks.map((link) => (
-                <Link
-                  key={link.id}
-                  href={link.url}
-                  className="text-xs text-white/70 transition-colors duration-300 hover:text-[#36a2ff]"
-                >
-                  {link.label}
-                </Link>
-              ))}
-            </div>
-
-            <div className="flex items-center gap-3">
-              {data.socialLinks.map((social) => (
-                <Link
-                  key={social.id}
-                  href={social.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label={social.label}
-                  className="flex h-9 w-9 items-center justify-center rounded-full border border-[#168ef5] text-sm text-white transition-colors duration-300 hover:bg-[#0b6cf0]"
-                >
-                  {renderSocialIcon(social.icon)}
-                </Link>
-              ))}
-            </div>
+          <div className="flex items-center justify-center gap-3">
+            {data.socialLinks.map((social) => (
+              <Link
+                key={social.id}
+                href={social.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={social.label}
+                className="flex h-9 w-9 items-center justify-center rounded-full border border-[#168ef5] text-sm text-white transition-colors duration-300 hover:bg-[#0b6cf0]"
+              >
+                {renderSocialIcon(social.icon)}
+              </Link>
+            ))}
           </div>
         </div>
       </div>

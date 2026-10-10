@@ -5,7 +5,6 @@ import { TopBar } from '@/components/common/TopBar';
 import { Header } from '@/components/common/Header';
 import { Breadcrumb } from '@/components/common/Breadcrumb';
 import { ContactSection } from '@/components/sections/ContactSection';
-import { CtaSection } from '@/components/sections/CtaSection';
 import { Footer } from '@/components/common/Footer';
 
 export const dynamic = 'force-dynamic';
@@ -15,7 +14,7 @@ export default function ContactPage() {
   const sectionData = templateData?.categories?.StockBroker?.sections;
   const commonData = templateData?.common;
 
-  if (!sectionData || !commonData) return <div className="text-black p-10">Loading Data...</div>;
+  if (!sectionData || !commonData) return null;
 
   return (
     <main className="bg-white">
@@ -23,11 +22,7 @@ export default function ContactPage() {
       <Header data={sectionData.Header?.variants?.StockBrokerHeader1} />
       <Breadcrumb data={commonData.contactBreadcrumb} />
       
-      {/* Contact Section */}
       <ContactSection data={sectionData.contact?.variants?.StockBrokerContact1} />
-
-      {/* CTA Section */}
-      <CtaSection data={sectionData.Cta?.variants?.StockBrokerCta1} />
 
       <Footer data={commonData.Footer} />
     </main>

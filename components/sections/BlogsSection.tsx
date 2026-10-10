@@ -1,18 +1,13 @@
-'use client';
-
-import React, { useState } from 'react';
+import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { FaArrowRight } from 'react-icons/fa';
 import { BlogsSectionProps } from '@/types/templates.types';
 
 export const BlogsSection = ({ data, isPage = false }: BlogsSectionProps) => {
-  const [visibleCount, setVisibleCount] = useState(isPage ? 6 : 3);
-
   if (!data?.blogs.length) return null;
 
-  const visibleBlogs = data.blogs.slice(0, visibleCount);
-  const hasMore = visibleCount < data.blogs.length;
+  const visibleBlogs = isPage ? data.pageBlogs : data.blogs.slice(0, 3);
 
   return (
     <section className="w-full bg-white py-8 lg:py-12">
@@ -88,18 +83,6 @@ export const BlogsSection = ({ data, isPage = false }: BlogsSectionProps) => {
           })}
         </div>
 
-        {isPage && hasMore && (
-          <div className="mt-8 flex justify-center">
-            <button
-              type="button"
-              onClick={() => setVisibleCount((current) => current + 3)}
-              className="inline-flex items-center gap-3 rounded-md border border-[#0b6cf0] px-7 py-3.5 text-sm font-bold text-[#0b6cf0] transition-colors duration-300 hover:bg-[#0b6cf0] hover:text-white"
-            >
-              {data.loadMoreText}
-              <FaArrowRight className="text-xs" />
-            </button>
-          </div>
-        )}
       </div>
     </section>
   );

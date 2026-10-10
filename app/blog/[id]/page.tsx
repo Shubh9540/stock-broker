@@ -1,5 +1,5 @@
 import React from 'react';
-import { StockBrokerTemplateData } from '@/types/templates.types';
+import { BreadcrumbData, StockBrokerTemplateData } from '@/types/templates.types';
 import rawData from '@/data/templates.json';
 import { TopBar } from '@/components/common/TopBar';
 import { Header } from '@/components/common/Header';
@@ -18,26 +18,25 @@ export default async function BlogDetailPage({ params }: { params: Promise<{ id:
   const sectionData = templateData?.categories?.StockBroker?.sections;
   const commonData = templateData?.common;
 
-  if (!sectionData || !commonData) return <div className="text-black p-10">Loading Data...</div>;
+  if (!sectionData || !commonData) return null;
 
-  const allBlogs = sectionData.Blogs?.variants?.StockBrokerBlogs1?.blogs || [];
-  const currentBlog = allBlogs.find(b => b.url.endsWith(`/${id}`));
+  const blogDetailData = sectionData.BlogDetails?.variants?.[id];
 
-  if (!currentBlog) {
+  if (!blogDetailData) {
     notFound();
   }
 
-  // Get 5 recent blogs, excluding the current one
-  const recentBlogs = allBlogs.filter(b => b.id !== currentBlog.id).slice(0, 5);
+  const blogsBreadcrumb = commonData.blogsBreadcrumb;
+  const homePath = blogsBreadcrumb?.paths[0];
 
-  // Create breadcrumb data for the specific blog
-  const breadcrumbData = {
-    title: currentBlog.title,
-    bgImage: commonData.aboutBreadcrumb?.bgImage ?? '',
+  if (!blogsBreadcrumb || !homePath) return null;
+
+  const breadcrumbData: BreadcrumbData = {
+    title: blogDetailData.breadcrumbTitle,
+    bgImage: blogsBreadcrumb.bgImage,
     paths: [
-      { id: 'breadcrumb-blog-detail-home', label: 'Home', url: '/' },
-      { id: 'breadcrumb-blog-detail-list', label: 'Blog', url: '/blog' },
-      { id: 'breadcrumb-blog-detail-current', label: 'Blog Details' }
+      { ...homePath, id: 'breadcrumb-blog-detail-home' },
+      { id: 'breadcrumb-blog-detail-current', label: blogDetailData.breadcrumbLabel }
     ]
   };
 
@@ -48,7 +47,7 @@ export default async function BlogDetailPage({ params }: { params: Promise<{ id:
       
       <Breadcrumb data={breadcrumbData} />
       
-      <BlogDetailContent blog={currentBlog} recentBlogs={recentBlogs} sidebarCta={sectionData.Blogs?.variants?.StockBrokerBlogs1?.sidebarCta} />
+      <BlogDetailContent data={blogDetailData} />
 
       <Footer data={commonData.Footer} />
     </main>

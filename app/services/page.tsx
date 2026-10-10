@@ -27,7 +27,8 @@ export default function ServicesPage() {
       
       {/* Services Grid */}
       <ServicesGrid data={sectionData.ServicesGrid?.variants?.StockBrokerServicesGrid1} />
-
+    
+     
       {/* CTA Section */}
       <CtaSection data={sectionData.Cta?.variants?.StockBrokerCta1} />
 

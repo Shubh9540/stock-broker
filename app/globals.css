@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Fonts */
+  --font-primary: var(--font-poppins), sans-serif;
+  --font-heading: var(--font-poppins), sans-serif;
+
+  /* Global Colors — Stock Broker Design */
+  --color-bg-main: #ffffff;
+  --color-bg-card: #ffffff;
+  --color-bg-alt: #f5f8fc;
+  --color-primary: #0b6cf0;
+  --color-accent: #0b6cf0;
+  --color-accent-light: #4f91ff;
+  --color-text: #061a3a;
+  --color-text-light: #64748b;
+  --color-border: #dfe9f6;
+}
+
+body {
+  color: var(--color-text);
+  background-color: var(--color-bg-main);
+}

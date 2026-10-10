@@ -1,0 +1,2184 @@
+{
+  "common": {
+    "Footer": {
+      "logo": "/main logo/footer logo.webp",
+      "logoAlt": "ORVEXA Logo",
+      "brandTitle": "ORVEXA",
+      "copyrightText": "© 2026 ORVEXA. All Rights Reserved. Powered By Lestow",
+      "description": "Your trusted partner in building financial growth through smart investments, expert guidance and innovative trading solutions.",
+      "quickLinksTitle": "Quick Links",
+      "servicesTitle": "Our Services",
+      "contactTitle": "Contact Us",
+      "socialLinks": [
+        {
+          "id": "social-facebook",
+          "icon": "FaFacebookF",
+          "label": "Facebook",
+          "url": "https://facebook.com"
+        },
+        {
+          "id": "social-instagram",
+          "icon": "FaInstagram",
+          "label": "Instagram",
+          "url": "https://instagram.com"
+        },
+        {
+          "id": "social-linkedin",
+          "icon": "FaLinkedinIn",
+          "label": "LinkedIn",
+          "url": "https://linkedin.com"
+        },
+        {
+          "id": "social-youtube",
+          "icon": "FaYoutube",
+          "label": "YouTube",
+          "url": "https://youtube.com"
+        }
+      ],
+      "quickLinks": [
+        {
+          "id": "quick-home",
+          "label": "Home",
+          "url": "/"
+        },
+        {
+          "id": "quick-about",
+          "label": "About Us",
+          "url": "/about"
+        },
+        {
+          "id": "quick-services",
+          "label": "Our Services",
+          "url": "/services"
+        },
+        {
+          "id": "quick-process",
+          "label": "How It Works",
+          "url": "/#how-it-works"
+        },
+        {
+          "id": "quick-blog",
+          "label": "Blog",
+          "url": "/blog"
+        },
+        {
+          "id": "quick-faq",
+          "label": "FAQs",
+          "url": "/faq"
+        },
+        {
+          "id": "quick-contact",
+          "label": "Contact Us",
+          "url": "/contact"
+        },
+        {
+          "id": "quick-enquiry",
+          "label": "Enquiry Now",
+          "url": "/enquiry"
+        }
+      ],
+      "servicesLinks": [
+        {
+          "id": "service-equity",
+          "label": "Equity Trading",
+          "url": "/services/equity-trading"
+        },
+        {
+          "id": "service-mutual-funds",
+          "label": "Mutual Funds",
+          "url": "/services/mutual-funds"
+        },
+        {
+          "id": "service-ipo",
+          "label": "IPO Investments",
+          "url": "/services/ipo-investments"
+        },
+        {
+          "id": "service-derivatives",
+          "label": "Derivatives",
+          "url": "/services/derivatives"
+        },
+        {
+          "id": "service-planning",
+          "label": "Investment Planning",
+          "url": "/services/investment-planning"
+        },
+        {
+          "id": "service-portfolio",
+          "label": "Portfolio Management",
+          "url": "/services/portfolio-management"
+        }
+      ],
+      "contactInfo": {
+        "email": "info@xyz.com",
+        "phone": "+1 000000000",
+        "address": "123 Main St, New York, NY, USA"
+      },
+      "legalLinks": [
+        {
+          "id": "legal-privacy",
+          "label": "Privacy Policy",
+          "url": "/privacy-policy"
+        },
+        {
+          "id": "legal-terms",
+          "label": "Terms & Conditions",
+          "url": "/terms-and-conditions"
+        },
+        {
+          "id": "legal-sitemap",
+          "label": "Sitemap",
+          "url": "/sitemap"
+        }
+      ]
+    },
+    "aboutBreadcrumb": {
+      "title": "About Us",
+      "paths": [
+        {
+          "label": "Home",
+          "url": "/"
+        },
+        {
+          "label": "About Us"
+        }
+      ]
+    },
+    "servicesBreadcrumb": {
+      "title": "Our Services",
+      "paths": [
+        {
+          "label": "Home",
+          "url": "/"
+        },
+        {
+          "label": "Services"
+        }
+      ]
+    },
+    "contactBreadcrumb": {
+      "title": "Contact Us",
+      "paths": [
+        {
+          "label": "Home",
+          "url": "/"
+        },
+        {
+          "label": "Contact Us"
+        }
+      ]
+    },
+    "enquiryBreadcrumb": {
+      "title": "Enquiry Now",
+      "paths": [
+        {
+          "label": "Home",
+          "url": "/"
+        },
+        {
+          "label": "Enquiry Now"
+        }
+      ]
+    }
+  },
+  "categories": {
+    "StockBroker": {
+      "sections": {
+        "TopBar": {
+          "variants": {
+            "StockBrokerTopBar1": {
+              "tagline": "Your Trusted Partner in Smarter Investing",
+              "taglineIcon": "FaChartLine",
+              "phoneValue": "+1 000000000",
+              "emailValue": "info@xyz.com",
+              "locationValue": "123 Main St, New York, NY, USA",
+              "socialLinks": [
+                {
+                  "id": "tb-linkedin",
+                  "icon": "FaLinkedinIn",
+                  "url": "https://www.linkedin.com"
+                },
+                {
+                  "id": "tb-instagram",
+                  "icon": "FaInstagram",
+                  "url": "https://www.instagram.com"
+                },
+                {
+                  "id": "tb-youtube",
+                  "icon": "FaYoutube",
+                  "url": "https://www.youtube.com"
+                }
+              ]
+            }
+          }
+        },
+        "Header": {
+          "variants": {
+            "StockBrokerHeader1": {
+              "logo": "/main logo/header logo.webp",
+              "logoAlt": "ORVEXA Stock Broker",
+              "contactInfoLeft": [
+                {
+                  "id": "ci-phone",
+                  "icon": "FiPhoneCall",
+                  "label": "Call for help:",
+                  "value": "+1 000000000"
+                },
+                {
+                  "id": "ci-email",
+                  "icon": "FiMail",
+                  "label": "Mail to us:",
+                  "value": "info@xyz.com"
+                }
+              ],
+              "contactInfoRight": [
+                {
+                  "id": "ci-location",
+                  "icon": "FiMapPin",
+                  "label": "Our Location:",
+                  "value": "123 Main St, New York, NY, USA"
+                }
+              ],
+              "navLinksLeft": [
+                {
+                  "id": "nl-home",
+                  "label": "Home",
+                  "url": "/"
+                },
+                {
+                  "id": "nl-about",
+                  "label": "About Us",
+                  "url": "/about"
+                },
+                {
+                  "id": "nl-services",
+                  "label": "Services",
+                  "url": "/services"
+                }
+              ],
+              "navLinksRight": [
+                {
+                  "id": "nl-team",
+                  "label": "Team",
+                  "url": "/team"
+                },
+                {
+                  "id": "nl-blogs",
+                  "label": "Blogs",
+                  "url": "/blog"
+                },
+                {
+                  "id": "nl-contact",
+                  "label": "Contact Us",
+                  "url": "/contact"
+                }
+              ],
+              "contactButton": {
+                "text": "Enquire Now",
+                "url": "/enquiry"
+              }
+            }
+          }
+        },
+        "Hero": {
+          "variants": {
+            "StockBrokerHero1": {
+              "previousSlideLabel": "Previous slide",
+              "nextSlideLabel": "Next slide",
+              "counterSeparator": "/",
+              "autoplayDelay": 6000,
+              "slides": [
+                {
+                  "id": "slide-1",
+                  "number": "01",
+                  "titleLine1": "INVESTING",
+                  "titleLine2": "IN YOUR",
+                  "highlightedTitle": "FOREX",
+                  "titleLine3": "FUTURE",
+                  "description": "Trade the global markets with confidence. Get the right tools, insights and support to grow your financial future.",
+                  "image": "/banner/hero_1.webp",
+                  "imageAlt": "Investor reviewing forex market charts",
+                  "primaryButton": {
+                    "text": "Enquire Now",
+                    "url": "/enquiry",
+                    "icon": "FaArrowRight"
+                  },
+                  "secondaryButton": {
+                    "text": "Explore Markets",
+                    "url": "/services",
+                    "icon": "FaChartBar"
+                  }
+                },
+                {
+                  "id": "slide-2",
+                  "number": "02",
+                  "titleLine1": "BUILDING",
+                  "titleLine2": "SMARTER",
+                  "highlightedTitle": "MARKET",
+                  "titleLine3": "STRATEGIES",
+                  "description": "Access clear market insights, intelligent trading tools and expert support designed to strengthen every investment decision.",
+                  "image": "/banner/hero_2.webp",
+                  "imageAlt": "Investor studying global financial market displays",
+                  "primaryButton": {
+                    "text": "Enquire Now",
+                    "url": "/enquiry",
+                    "icon": "FaArrowRight"
+                  },
+                  "secondaryButton": {
+                    "text": "Explore Markets",
+                    "url": "/services",
+                    "icon": "FaChartBar"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "AboutUs": {
+          "variants": {
+            "StockBrokerAboutUs1": {
+              "subtitle": "About Us",
+              "title1": "The Platform of Choice for",
+              "highlightedTitle": "66K+",
+              "title2": "Global Traders",
+              "description": "At ORVEXA, we are committed to providing a secure, transparent and technology-driven trading environment, empowering traders to connect, learn and grow with confidence.",
+              "imageMain": "/about/about1.webp",
+              "imageMainAlt": "Experienced ORVEXA market professional",
+              "imageSecondary": "/about/about2.webp",
+              "imageSecondaryAlt": "ORVEXA trader analysing financial markets",
+              "experienceValue": "10+",
+              "experienceLabel": "Years of Experience",
+              "progressItems": [
+                {
+                  "id": "progress-satisfaction",
+                  "percentage": 80,
+                  "label": "Total Trader Satisfaction"
+                },
+                {
+                  "id": "progress-reviews",
+                  "percentage": 65,
+                  "label": "Trade Reviews Comparison"
+                }
+              ],
+              "features": [
+                {
+                  "id": "feature-service",
+                  "icon": "FaShieldAlt",
+                  "label": "Excellent customer service"
+                },
+                {
+                  "id": "feature-skills",
+                  "icon": "FaUsers",
+                  "label": "First-class professional skills"
+                },
+                {
+                  "id": "feature-analysis",
+                  "icon": "FaChartBar",
+                  "label": "Top technical analysis"
+                },
+                {
+                  "id": "feature-signals",
+                  "icon": "FaChartLine",
+                  "label": "Trading signal tracking"
+                }
+              ],
+              "button": {
+                "text": "Read More",
+                "url": "/about"
+              },
+              "support": {
+                "icon": "FaPhoneAlt",
+                "label": "Support us",
+                "value": "+1 000000000",
+                "url": "tel:+1000000000"
+              }
+            }
+          }
+        },
+        "Services": {
+          "variants": {
+            "StockBrokerServices1": {
+              "subtitle": "Our Services",
+              "title1": "A Complete Range of",
+              "title2": "Investment Services",
+              "description": "From equities to derivatives, our expert-driven solutions are designed to help you trade, invest and grow with confidence.",
+              "linkText": "Learn More",
+              "services": [
+                {
+                  "id": "service-equity-trading",
+                  "title": "Equity Trading",
+                  "description": "Access to NSE & BSE with advanced trading tools.",
+                  "image": "/service/1.webp",
+                  "imageAlt": "Equity market chart analysis",
+                  "icon": "FaChartLine",
+                  "url": "/services/equity-trading"
+                },
+                {
+                  "id": "service-mutual-funds",
+                  "title": "Mutual Funds",
+                  "description": "Invest in top-performing funds for long-term growth.",
+                  "image": "/service/2.webp",
+                  "imageAlt": "Growing investment represented by coins and a plant",
+                  "icon": "FaHandHoldingUsd",
+                  "url": "/services/mutual-funds"
+                },
+                {
+                  "id": "service-ipo-investments",
+                  "title": "IPO Investments",
+                  "description": "Get early access to promising opportunities.",
+                  "image": "/service/3.webp",
+                  "imageAlt": "IPO investment opportunity",
+                  "icon": "FaBuilding",
+                  "url": "/services/ipo-investments"
+                },
+                {
+                  "id": "service-derivatives",
+                  "title": "Derivatives",
+                  "description": "Trade F&O with expert research and insights.",
+                  "image": "/service/4.webp",
+                  "imageAlt": "Derivatives market chart analysis",
+                  "icon": "FaChartBar",
+                  "url": "/services/derivatives"
+                },
+                {
+                  "id": "service-research-advisory",
+                  "title": "Research & Advisory",
+                  "description": "Data-driven advice to make informed decisions.",
+                  "image": "/service/5.webp",
+                  "imageAlt": "Investment research and financial advisory report",
+                  "icon": "FaSearchDollar",
+                  "url": "/services/research-advisory"
+                }
+              ]
+            }
+          }
+        },
+        "ServiceDetail": {
+          "variants": {
+            "stock-broker-installation": {
+              "id": "stock-broker-installation",
+              "subtitle": "Our Service",
+              "title1": "Stock Broker",
+              "title2": "Installation",
+              "description": "We provide professional stock broker installation services for residential and commercial properties, ensuring long-lasting performance, leak-free connections and complete peace of mind.",
+              "imageMain": "/service/1.jpg",
+              "features": [
+                {
+                  "id": "f1",
+                  "icon": "FiShield",
+                  "title": "Durable Installation"
+                },
+                {
+                  "id": "f2",
+                  "icon": "FiSettings",
+                  "title": "Quality Materials"
+                },
+                {
+                  "id": "f3",
+                  "icon": "FiClock",
+                  "title": "On-Time Completion"
+                },
+                {
+                  "id": "f4",
+                  "icon": "FiUsers",
+                  "title": "Experienced Technicians"
+                }
+              ],
+              "overviewTitle": "Service Overview",
+              "overviewText": [
+                "Our pipe installation services are designed to meet the needs of modern homes and businesses. Whether you are constructing a new property or upgrading your existing stock broker system, our skilled team ensures safe, efficient and high-quality installations using premium-grade materials.",
+                "From water supply lines to drainage pipes, we handle every aspect with precision and care. Our focus is on delivering reliable solutions that prevent future issues and keep your stock broker system running smoothly for years to come."
+              ],
+              "overviewImage": "/service/2.jpg",
+              "processTitle": "Our Process",
+              "processSteps": [
+                {
+                  "id": "p1",
+                  "number": "01",
+                  "title": "Site Inspection",
+                  "description": "We assess your stock broker requirements and recommend the best solution."
+                },
+                {
+                  "id": "p2",
+                  "number": "02",
+                  "title": "Planning & Design",
+                  "description": "Detailed planning to ensure a safe and efficient installation process."
+                },
+                {
+                  "id": "p3",
+                  "number": "03",
+                  "title": "Installation",
+                  "description": "Our experts install pipes using quality materials and proven techniques."
+                },
+                {
+                  "id": "p4",
+                  "number": "04",
+                  "title": "Testing & Support",
+                  "description": "We test the system for leaks and performance, and provide ongoing support."
+                }
+              ],
+              "faqTitle": "Frequently Asked Questions",
+              "faqs": [
+                {
+                  "id": "q1",
+                  "question": "What types of pipes do you install?",
+                  "answer": "We install a variety of pipes including PVC, copper, PEX, and galvanized steel depending on your specific requirements and local stock broker codes."
+                },
+                {
+                  "id": "q2",
+                  "question": "How long does the installation process take?",
+                  "answer": "The duration depends on the scope of the project. A single fixture pipe installation might take a few hours, while whole-house repiping could take several days."
+                },
+                {
+                  "id": "q3",
+                  "question": "Do you provide a warranty on installation?",
+                  "answer": "Yes, we provide a comprehensive warranty on both our workmanship and the materials we supply."
+                },
+                {
+                  "id": "q4",
+                  "question": "Can you handle both residential and commercial projects?",
+                  "answer": "Absolutely! Our team is experienced in handling small residential pipe repairs as well as large-scale commercial pipe installations."
+                }
+              ],
+              "sidebar": {
+                "quoteForm": {
+                  "title": "Get a Free Quote",
+                  "description": "Fill out the form and our team will get back to you with the best solution for your needs.",
+                  "buttonText": "Enquire Now ->",
+                  "servicesList": [
+                    "Pipe Installation",
+                    "Leak Repairs",
+                    "Drain Cleaning",
+                    "Water Heaters",
+                    "Bathroom Stock Broker",
+                    "Emergency Stock Broker"
+                  ]
+                },
+                "servicesList": {
+                  "title": "Our Services",
+                  "services": [
+                    {
+                      "id": "s1",
+                      "label": "Stock Broker Installation",
+                      "url": "/services/stock-broker-installation"
+                    },
+                    {
+                      "id": "s2",
+                      "label": "Leak Detection Services",
+                      "url": "/services/leak-detection"
+                    },
+                    {
+                      "id": "s3",
+                      "label": "Pipe & Drain Cleaning",
+                      "url": "/services/pipe-drain-cleaning"
+                    },
+                    {
+                      "id": "s4",
+                      "label": "General Stock Broker Repair",
+                      "url": "/services/general-repair"
+                    },
+                    {
+                      "id": "s5",
+                      "label": "Water Heater Services",
+                      "url": "/services/water-heater"
+                    },
+                    {
+                      "id": "s6",
+                      "label": "Bathroom Fixture Installation",
+                      "url": "/services/bathroom-fixture"
+                    }
+                  ]
+                }
+              }
+            },
+            "leak-detection": {
+              "id": "leak-detection",
+              "subtitle": "Our Service",
+              "title1": "Leak",
+              "title2": "Detection Services",
+              "description": "Find and fix hidden leaks before they become bigger problems. We use advanced tools to detect leaks quickly and accurately.",
+              "imageMain": "/service/2.jpg",
+              "features": [
+                {
+                  "id": "f1",
+                  "icon": "FiShield",
+                  "title": "Durable Installation"
+                },
+                {
+                  "id": "f2",
+                  "icon": "FiSettings",
+                  "title": "Quality Materials"
+                },
+                {
+                  "id": "f3",
+                  "icon": "FiClock",
+                  "title": "On-Time Completion"
+                },
+                {
+                  "id": "f4",
+                  "icon": "FiUsers",
+                  "title": "Experienced Technicians"
+                }
+              ],
+              "overviewTitle": "Service Overview",
+              "overviewText": [
+                "Find and fix hidden leaks before they become bigger problems. We use advanced tools to detect leaks quickly and accurately.",
+                "From water supply lines to drainage pipes, we handle every aspect with precision and care. Our focus is on delivering reliable solutions that prevent future issues and keep your stock broker system running smoothly for years to come."
+              ],
+              "overviewImage": "/service/2.jpg",
+              "processTitle": "Our Process",
+              "processSteps": [
+                {
+                  "id": "p1",
+                  "number": "01",
+                  "title": "Site Inspection",
+                  "description": "We assess your stock broker requirements and recommend the best solution."
+                },
+                {
+                  "id": "p2",
+                  "number": "02",
+                  "title": "Planning & Design",
+                  "description": "Detailed planning to ensure a safe and efficient installation process."
+                },
+                {
+                  "id": "p3",
+                  "number": "03",
+                  "title": "Installation",
+                  "description": "Our experts install pipes using quality materials and proven techniques."
+                },
+                {
+                  "id": "p4",
+                  "number": "04",
+                  "title": "Testing & Support",
+                  "description": "We test the system for leaks and performance, and provide ongoing support."
+                }
+              ],
+              "faqTitle": "Frequently Asked Questions",
+              "faqs": [
+                {
+                  "id": "q1",
+                  "question": "What types of pipes do you install?",
+                  "answer": "We install a variety of pipes including PVC, copper, PEX, and galvanized steel depending on your specific requirements and local stock broker codes."
+                },
+                {
+                  "id": "q2",
+                  "question": "How long does the installation process take?",
+                  "answer": "The duration depends on the scope of the project. A single fixture pipe installation might take a few hours, while whole-house repiping could take several days."
+                },
+                {
+                  "id": "q3",
+                  "question": "Do you provide a warranty on installation?",
+                  "answer": "Yes, we provide a comprehensive warranty on both our workmanship and the materials we supply."
+                },
+                {
+                  "id": "q4",
+                  "question": "Can you handle both residential and commercial projects?",
+                  "answer": "Absolutely! Our team is experienced in handling small residential pipe repairs as well as large-scale commercial pipe installations."
+                }
+              ],
+              "sidebar": {
+                "quoteForm": {
+                  "title": "Get a Free Quote",
+                  "description": "Fill out the form and our team will get back to you with the best solution for your needs.",
+                  "buttonText": "Enquire Now ->",
+                  "servicesList": [
+                    "Pipe Installation",
+                    "Leak Repairs",
+                    "Drain Cleaning",
+                    "Water Heaters",
+                    "Bathroom Stock Broker",
+                    "Emergency Stock Broker"
+                  ]
+                },
+                "servicesList": {
+                  "title": "Our Services",
+                  "services": [
+                    {
+                      "id": "s1",
+                      "label": "Stock Broker Installation",
+                      "url": "/services/stock-broker-installation"
+                    },
+                    {
+                      "id": "s2",
+                      "label": "Leak Detection Services",
+                      "url": "/services/leak-detection"
+                    },
+                    {
+                      "id": "s3",
+                      "label": "Pipe & Drain Cleaning",
+                      "url": "/services/pipe-drain-cleaning"
+                    },
+                    {
+                      "id": "s4",
+                      "label": "General Stock Broker Repair",
+                      "url": "/services/general-repair"
+                    },
+                    {
+                      "id": "s5",
+                      "label": "Water Heater Services",
+                      "url": "/services/water-heater"
+                    },
+                    {
+                      "id": "s6",
+                      "label": "Bathroom Fixture Installation",
+                      "url": "/services/bathroom-fixture"
+                    }
+                  ]
+                }
+              }
+            },
+            "pipe-drain-cleaning": {
+              "id": "pipe-drain-cleaning",
+              "subtitle": "Our Service",
+              "title1": "Pipe",
+              "title2": "& Drain Cleaning",
+              "description": "Keep your pipes clear and your systems running smoothly with our professional drain cleaning services.",
+              "imageMain": "/service/3.jpg",
+              "features": [
+                {
+                  "id": "f1",
+                  "icon": "FiShield",
+                  "title": "Durable Installation"
+                },
+                {
+                  "id": "f2",
+                  "icon": "FiSettings",
+                  "title": "Quality Materials"
+                },
+                {
+                  "id": "f3",
+                  "icon": "FiClock",
+                  "title": "On-Time Completion"
+                },
+                {
+                  "id": "f4",
+                  "icon": "FiUsers",
+                  "title": "Experienced Technicians"
+                }
+              ],
+              "overviewTitle": "Service Overview",
+              "overviewText": [
+                "Keep your pipes clear and your systems running smoothly with our professional drain cleaning services.",
+                "From water supply lines to drainage pipes, we handle every aspect with precision and care. Our focus is on delivering reliable solutions that prevent future issues and keep your stock broker system running smoothly for years to come."
+              ],
+              "overviewImage": "/service/3.jpg",
+              "processTitle": "Our Process",
+              "processSteps": [
+                {
+                  "id": "p1",
+                  "number": "01",
+                  "title": "Site Inspection",
+                  "description": "We assess your stock broker requirements and recommend the best solution."
+                },
+                {
+                  "id": "p2",
+                  "number": "02",
+                  "title": "Planning & Design",
+                  "description": "Detailed planning to ensure a safe and efficient installation process."
+                },
+                {
+                  "id": "p3",
+                  "number": "03",
+                  "title": "Installation",
+                  "description": "Our experts install pipes using quality materials and proven techniques."
+                },
+                {
+                  "id": "p4",
+                  "number": "04",
+                  "title": "Testing & Support",
+                  "description": "We test the system for leaks and performance, and provide ongoing support."
+                }
+              ],
+              "faqTitle": "Frequently Asked Questions",
+              "faqs": [
+                {
+                  "id": "q1",
+                  "question": "What types of pipes do you install?",
+                  "answer": "We install a variety of pipes including PVC, copper, PEX, and galvanized steel depending on your specific requirements and local stock broker codes."
+                },
+                {
+                  "id": "q2",
+                  "question": "How long does the installation process take?",
+                  "answer": "The duration depends on the scope of the project. A single fixture pipe installation might take a few hours, while whole-house repiping could take several days."
+                },
+                {
+                  "id": "q3",
+                  "question": "Do you provide a warranty on installation?",
+                  "answer": "Yes, we provide a comprehensive warranty on both our workmanship and the materials we supply."
+                },
+                {
+                  "id": "q4",
+                  "question": "Can you handle both residential and commercial projects?",
+                  "answer": "Absolutely! Our team is experienced in handling small residential pipe repairs as well as large-scale commercial pipe installations."
+                }
+              ],
+              "sidebar": {
+                "quoteForm": {
+                  "title": "Get a Free Quote",
+                  "description": "Fill out the form and our team will get back to you with the best solution for your needs.",
+                  "buttonText": "Enquire Now ->",
+                  "servicesList": [
+                    "Pipe Installation",
+                    "Leak Repairs",
+                    "Drain Cleaning",
+                    "Water Heaters",
+                    "Bathroom Stock Broker",
+                    "Emergency Stock Broker"
+                  ]
+                },
+                "servicesList": {
+                  "title": "Our Services",
+                  "services": [
+                    {
+                      "id": "s1",
+                      "label": "Stock Broker Installation",
+                      "url": "/services/stock-broker-installation"
+                    },
+                    {
+                      "id": "s2",
+                      "label": "Leak Detection Services",
+                      "url": "/services/leak-detection"
+                    },
+                    {
+                      "id": "s3",
+                      "label": "Pipe & Drain Cleaning",
+                      "url": "/services/pipe-drain-cleaning"
+                    },
+                    {
+                      "id": "s4",
+                      "label": "General Stock Broker Repair",
+                      "url": "/services/general-repair"
+                    },
+                    {
+                      "id": "s5",
+                      "label": "Water Heater Services",
+                      "url": "/services/water-heater"
+                    },
+                    {
+                      "id": "s6",
+                      "label": "Bathroom Fixture Installation",
+                      "url": "/services/bathroom-fixture"
+                    }
+                  ]
+                }
+              }
+            },
+            "general-repair": {
+              "id": "general-repair",
+              "subtitle": "Our Service",
+              "title1": "General",
+              "title2": "Stock Broker Repair",
+              "description": "From dripping faucets to faulty pipes, we handle all types of stock broker repairs with reliable and long-lasting solutions.",
+              "imageMain": "/service/4.jpg",
+              "features": [
+                {
+                  "id": "f1",
+                  "icon": "FiShield",
+                  "title": "Durable Installation"
+                },
+                {
+                  "id": "f2",
+                  "icon": "FiSettings",
+                  "title": "Quality Materials"
+                },
+                {
+                  "id": "f3",
+                  "icon": "FiClock",
+                  "title": "On-Time Completion"
+                },
+                {
+                  "id": "f4",
+                  "icon": "FiUsers",
+                  "title": "Experienced Technicians"
+                }
+              ],
+              "overviewTitle": "Service Overview",
+              "overviewText": [
+                "From dripping faucets to faulty pipes, we handle all types of stock broker repairs with reliable and long-lasting solutions.",
+                "From water supply lines to drainage pipes, we handle every aspect with precision and care. Our focus is on delivering reliable solutions that prevent future issues and keep your stock broker system running smoothly for years to come."
+              ],
+              "overviewImage": "/service/4.jpg",
+              "processTitle": "Our Process",
+              "processSteps": [
+                {
+                  "id": "p1",
+                  "number": "01",
+                  "title": "Site Inspection",
+                  "description": "We assess your stock broker requirements and recommend the best solution."
+                },
+                {
+                  "id": "p2",
+                  "number": "02",
+                  "title": "Planning & Design",
+                  "description": "Detailed planning to ensure a safe and efficient installation process."
+                },
+                {
+                  "id": "p3",
+                  "number": "03",
+                  "title": "Installation",
+                  "description": "Our experts install pipes using quality materials and proven techniques."
+                },
+                {
+                  "id": "p4",
+                  "number": "04",
+                  "title": "Testing & Support",
+                  "description": "We test the system for leaks and performance, and provide ongoing support."
+                }
+              ],
+              "faqTitle": "Frequently Asked Questions",
+              "faqs": [
+                {
+                  "id": "q1",
+                  "question": "What types of pipes do you install?",
+                  "answer": "We install a variety of pipes including PVC, copper, PEX, and galvanized steel depending on your specific requirements and local stock broker codes."
+                },
+                {
+                  "id": "q2",
+                  "question": "How long does the installation process take?",
+                  "answer": "The duration depends on the scope of the project. A single fixture pipe installation might take a few hours, while whole-house repiping could take several days."
+                },
+                {
+                  "id": "q3",
+                  "question": "Do you provide a warranty on installation?",
+                  "answer": "Yes, we provide a comprehensive warranty on both our workmanship and the materials we supply."
+                },
+                {
+                  "id": "q4",
+                  "question": "Can you handle both residential and commercial projects?",
+                  "answer": "Absolutely! Our team is experienced in handling small residential pipe repairs as well as large-scale commercial pipe installations."
+                }
+              ],
+              "sidebar": {
+                "quoteForm": {
+                  "title": "Get a Free Quote",
+                  "description": "Fill out the form and our team will get back to you with the best solution for your needs.",
+                  "buttonText": "Enquire Now ->",
+                  "servicesList": [
+                    "Pipe Installation",
+                    "Leak Repairs",
+                    "Drain Cleaning",
+                    "Water Heaters",
+                    "Bathroom Stock Broker",
+                    "Emergency Stock Broker"
+                  ]
+                },
+                "servicesList": {
+                  "title": "Our Services",
+                  "services": [
+                    {
+                      "id": "s1",
+                      "label": "Stock Broker Installation",
+                      "url": "/services/stock-broker-installation"
+                    },
+                    {
+                      "id": "s2",
+                      "label": "Leak Detection Services",
+                      "url": "/services/leak-detection"
+                    },
+                    {
+                      "id": "s3",
+                      "label": "Pipe & Drain Cleaning",
+                      "url": "/services/pipe-drain-cleaning"
+                    },
+                    {
+                      "id": "s4",
+                      "label": "General Stock Broker Repair",
+                      "url": "/services/general-repair"
+                    },
+                    {
+                      "id": "s5",
+                      "label": "Water Heater Services",
+                      "url": "/services/water-heater"
+                    },
+                    {
+                      "id": "s6",
+                      "label": "Bathroom Fixture Installation",
+                      "url": "/services/bathroom-fixture"
+                    }
+                  ]
+                }
+              }
+            },
+            "water-heater": {
+              "id": "water-heater",
+              "subtitle": "Our Service",
+              "title1": "Water",
+              "title2": "Heater Services",
+              "description": "Installation, repair and maintenance of all types of water heaters to ensure a continuous supply of hot water.",
+              "imageMain": "/service/5.jpg",
+              "features": [
+                {
+                  "id": "f1",
+                  "icon": "FiShield",
+                  "title": "Durable Installation"
+                },
+                {
+                  "id": "f2",
+                  "icon": "FiSettings",
+                  "title": "Quality Materials"
+                },
+                {
+                  "id": "f3",
+                  "icon": "FiClock",
+                  "title": "On-Time Completion"
+                },
+                {
+                  "id": "f4",
+                  "icon": "FiUsers",
+                  "title": "Experienced Technicians"
+                }
+              ],
+              "overviewTitle": "Service Overview",
+              "overviewText": [
+                "Installation, repair and maintenance of all types of water heaters to ensure a continuous supply of hot water.",
+                "From water supply lines to drainage pipes, we handle every aspect with precision and care. Our focus is on delivering reliable solutions that prevent future issues and keep your stock broker system running smoothly for years to come."
+              ],
+              "overviewImage": "/service/5.jpg",
+              "processTitle": "Our Process",
+              "processSteps": [
+                {
+                  "id": "p1",
+                  "number": "01",
+                  "title": "Site Inspection",
+                  "description": "We assess your stock broker requirements and recommend the best solution."
+                },
+                {
+                  "id": "p2",
+                  "number": "02",
+                  "title": "Planning & Design",
+                  "description": "Detailed planning to ensure a safe and efficient installation process."
+                },
+                {
+                  "id": "p3",
+                  "number": "03",
+                  "title": "Installation",
+                  "description": "Our experts install pipes using quality materials and proven techniques."
+                },
+                {
+                  "id": "p4",
+                  "number": "04",
+                  "title": "Testing & Support",
+                  "description": "We test the system for leaks and performance, and provide ongoing support."
+                }
+              ],
+              "faqTitle": "Frequently Asked Questions",
+              "faqs": [
+                {
+                  "id": "q1",
+                  "question": "What types of pipes do you install?",
+                  "answer": "We install a variety of pipes including PVC, copper, PEX, and galvanized steel depending on your specific requirements and local stock broker codes."
+                },
+                {
+                  "id": "q2",
+                  "question": "How long does the installation process take?",
+                  "answer": "The duration depends on the scope of the project. A single fixture pipe installation might take a few hours, while whole-house repiping could take several days."
+                },
+                {
+                  "id": "q3",
+                  "question": "Do you provide a warranty on installation?",
+                  "answer": "Yes, we provide a comprehensive warranty on both our workmanship and the materials we supply."
+                },
+                {
+                  "id": "q4",
+                  "question": "Can you handle both residential and commercial projects?",
+                  "answer": "Absolutely! Our team is experienced in handling small residential pipe repairs as well as large-scale commercial pipe installations."
+                }
+              ],
+              "sidebar": {
+                "quoteForm": {
+                  "title": "Get a Free Quote",
+                  "description": "Fill out the form and our team will get back to you with the best solution for your needs.",
+                  "buttonText": "Enquire Now ->",
+                  "servicesList": [
+                    "Pipe Installation",
+                    "Leak Repairs",
+                    "Drain Cleaning",
+                    "Water Heaters",
+                    "Bathroom Stock Broker",
+                    "Emergency Stock Broker"
+                  ]
+                },
+                "servicesList": {
+                  "title": "Our Services",
+                  "services": [
+                    {
+                      "id": "s1",
+                      "label": "Stock Broker Installation",
+                      "url": "/services/stock-broker-installation"
+                    },
+                    {
+                      "id": "s2",
+                      "label": "Leak Detection Services",
+                      "url": "/services/leak-detection"
+                    },
+                    {
+                      "id": "s3",
+                      "label": "Pipe & Drain Cleaning",
+                      "url": "/services/pipe-drain-cleaning"
+                    },
+                    {
+                      "id": "s4",
+                      "label": "General Stock Broker Repair",
+                      "url": "/services/general-repair"
+                    },
+                    {
+                      "id": "s5",
+                      "label": "Water Heater Services",
+                      "url": "/services/water-heater"
+                    },
+                    {
+                      "id": "s6",
+                      "label": "Bathroom Fixture Installation",
+                      "url": "/services/bathroom-fixture"
+                    }
+                  ]
+                }
+              }
+            },
+            "bathroom-fixture": {
+              "id": "bathroom-fixture",
+              "subtitle": "Our Service",
+              "title1": "Bathroom",
+              "title2": "Fixture Installation",
+              "description": "We install and repair sinks, faucets, toilets, showers and other bathroom fixtures with expertise and care.",
+              "imageMain": "/service/6.jpg",
+              "features": [
+                {
+                  "id": "f1",
+                  "icon": "FiShield",
+                  "title": "Durable Installation"
+                },
+                {
+                  "id": "f2",
+                  "icon": "FiSettings",
+                  "title": "Quality Materials"
+                },
+                {
+                  "id": "f3",
+                  "icon": "FiClock",
+                  "title": "On-Time Completion"
+                },
+                {
+                  "id": "f4",
+                  "icon": "FiUsers",
+                  "title": "Experienced Technicians"
+                }
+              ],
+              "overviewTitle": "Service Overview",
+              "overviewText": [
+                "We install and repair sinks, faucets, toilets, showers and other bathroom fixtures with expertise and care.",
+                "From water supply lines to drainage pipes, we handle every aspect with precision and care. Our focus is on delivering reliable solutions that prevent future issues and keep your stock broker system running smoothly for years to come."
+              ],
+              "overviewImage": "/service/6.jpg",
+              "processTitle": "Our Process",
+              "processSteps": [
+                {
+                  "id": "p1",
+                  "number": "01",
+                  "title": "Site Inspection",
+                  "description": "We assess your stock broker requirements and recommend the best solution."
+                },
+                {
+                  "id": "p2",
+                  "number": "02",
+                  "title": "Planning & Design",
+                  "description": "Detailed planning to ensure a safe and efficient installation process."
+                },
+                {
+                  "id": "p3",
+                  "number": "03",
+                  "title": "Installation",
+                  "description": "Our experts install pipes using quality materials and proven techniques."
+                },
+                {
+                  "id": "p4",
+                  "number": "04",
+                  "title": "Testing & Support",
+                  "description": "We test the system for leaks and performance, and provide ongoing support."
+                }
+              ],
+              "faqTitle": "Frequently Asked Questions",
+              "faqs": [
+                {
+                  "id": "q1",
+                  "question": "What types of pipes do you install?",
+                  "answer": "We install a variety of pipes including PVC, copper, PEX, and galvanized steel depending on your specific requirements and local stock broker codes."
+                },
+                {
+                  "id": "q2",
+                  "question": "How long does the installation process take?",
+                  "answer": "The duration depends on the scope of the project. A single fixture pipe installation might take a few hours, while whole-house repiping could take several days."
+                },
+                {
+                  "id": "q3",
+                  "question": "Do you provide a warranty on installation?",
+                  "answer": "Yes, we provide a comprehensive warranty on both our workmanship and the materials we supply."
+                },
+                {
+                  "id": "q4",
+                  "question": "Can you handle both residential and commercial projects?",
+                  "answer": "Absolutely! Our team is experienced in handling small residential pipe repairs as well as large-scale commercial pipe installations."
+                }
+              ],
+              "sidebar": {
+                "quoteForm": {
+                  "title": "Get a Free Quote",
+                  "description": "Fill out the form and our team will get back to you with the best solution for your needs.",
+                  "buttonText": "Enquire Now ->",
+                  "servicesList": [
+                    "Pipe Installation",
+                    "Leak Repairs",
+                    "Drain Cleaning",
+                    "Water Heaters",
+                    "Bathroom Stock Broker",
+                    "Emergency Stock Broker"
+                  ]
+                },
+                "servicesList": {
+                  "title": "Our Services",
+                  "services": [
+                    {
+                      "id": "s1",
+                      "label": "Stock Broker Installation",
+                      "url": "/services/stock-broker-installation"
+                    },
+                    {
+                      "id": "s2",
+                      "label": "Leak Detection Services",
+                      "url": "/services/leak-detection"
+                    },
+                    {
+                      "id": "s3",
+                      "label": "Pipe & Drain Cleaning",
+                      "url": "/services/pipe-drain-cleaning"
+                    },
+                    {
+                      "id": "s4",
+                      "label": "General Stock Broker Repair",
+                      "url": "/services/general-repair"
+                    },
+                    {
+                      "id": "s5",
+                      "label": "Water Heater Services",
+                      "url": "/services/water-heater"
+                    },
+                    {
+                      "id": "s6",
+                      "label": "Bathroom Fixture Installation",
+                      "url": "/services/bathroom-fixture"
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "Process": {
+          "variants": {
+            "StockBrokerProcess1": {
+              "subtitle": "How It Works",
+              "title1": "Start Your Investment Journey in",
+              "title2": "4 Simple Steps",
+              "description": "A seamless and secure process to help you open an account, get verified, start investing and achieve your financial goals.",
+              "steps": [
+                {
+                  "id": "step-1",
+                  "icon": "FiEdit3",
+                  "number": "01",
+                  "title": "Open an Account",
+                  "description": "Complete a simple and secure registration process.",
+                  "image": "/work/1.webp",
+                  "imageAlt": "Secure online investment account registration"
+                },
+                {
+                  "id": "step-2",
+                  "icon": "FiUserCheck",
+                  "number": "02",
+                  "title": "Verify Your Details",
+                  "description": "Submit the required documents for KYC verification.",
+                  "image": "/work/2.webp",
+                  "imageAlt": "KYC verification completed on a mobile phone"
+                },
+                {
+                  "id": "step-3",
+                  "icon": "FiBarChart2",
+                  "number": "03",
+                  "title": "Start Investing",
+                  "description": "Access a wide range of investment options and expert insights.",
+                  "image": "/work/3.webp",
+                  "imageAlt": "Investor reviewing a market chart"
+                },
+                {
+                  "id": "step-4",
+                  "icon": "FiTarget",
+                  "number": "04",
+                  "title": "Achieve Your Goals",
+                  "description": "Grow your wealth with continuous support.",
+                  "image": "/work/4.webp",
+                  "imageAlt": "Investment growth represented by coins and an upward chart"
+                }
+              ]
+            }
+          }
+        },
+        "Testimonials": {
+          "variants": {
+            "StockBrokerTestimonials1": {
+              "subtitle": "Testimonials",
+              "title1": "What Our Clients Say",
+              "title2": "About Us",
+              "description": "Trusted by thousands of investors for a smarter and better trading experience.",
+              "previousLabel": "Previous testimonials",
+              "nextLabel": "Next testimonials",
+              "slideLabel": "Show testimonial",
+              "testimonials": [
+                {
+                  "id": "testimonial-rohit-mehta",
+                  "name": "Rohit Mehta",
+                  "location": "Active Investor",
+                  "quote": "ORVEXA has made investing simple and convenient. Their platform is easy to use and the support team is always helpful. Highly recommended!",
+                  "rating": 5,
+                  "avatar": "/team/1.webp"
+                },
+                {
+                  "id": "testimonial-priya-sharma",
+                  "name": "Priya Sharma",
+                  "location": "Equity Trader",
+                  "quote": "Great trading experience with excellent research and advisory support. The platform gives me confidence to make better decisions.",
+                  "rating": 5,
+                  "avatar": "/team/2.webp"
+                },
+                {
+                  "id": "testimonial-amit-verma",
+                  "name": "Amit Verma",
+                  "location": "Long-term Investor",
+                  "quote": "The ORVEXA team provides valuable market insights and timely guidance. It has been a great platform for my long-term investment journey.",
+                  "rating": 5,
+                  "avatar": "/team/3.webp"
+                },
+                {
+                  "id": "testimonial-neha-kapoor",
+                  "name": "Neha Kapoor",
+                  "location": "Mutual Fund Investor",
+                  "quote": "The investment guidance is clear, practical and easy to understand. I feel more confident about building a balanced portfolio for the future.",
+                  "rating": 5,
+                  "avatar": "/team/4.webp"
+                },
+                {
+                  "id": "testimonial-vikram-singh",
+                  "name": "Vikram Singh",
+                  "location": "Derivatives Trader",
+                  "quote": "Fast execution, useful research reports and responsive client support make ORVEXA a dependable partner for my trading needs.",
+                  "rating": 5,
+                  "avatar": "/team/5.webp"
+                },
+                {
+                  "id": "testimonial-ananya-patel",
+                  "name": "Ananya Patel",
+                  "location": "New Investor",
+                  "quote": "Opening my account and starting my first investment was smooth and secure. The team supported me throughout the entire process.",
+                  "rating": 5,
+                  "avatar": "/team/6.webp"
+                }
+              ]
+            }
+          }
+        },
+        "Cta": {
+          "variants": {
+            "StockBrokerCta1": {
+              "subtitle": "TAKE THE NEXT STEP",
+              "title1": "Let's Build a",
+              "title2": "Stronger",
+              "title3": "Financial Future",
+              "description": "Get expert guidance, personalized solutions and a seamless trading experience with ORVEXA. Our team is here to help you trade, invest and grow with confidence.",
+              "button1": {
+                "text": "Contact Us",
+                "url": "/contact"
+              },
+              "button2": {
+                "text": "Enquire Now",
+                "url": "/enquiry"
+              },
+              "image": "/about/cta.webp",
+              "imageAlt": "Investor trading on a laptop in a modern office"
+            }
+          }
+        },
+        "Blogs": {
+          "variants": {
+            "StockBrokerBlogs1": {
+              "subtitle": "OUR LATEST BLOG",
+              "title1": "Insights, Ideas &",
+              "title2": "Market Updates",
+              "description": "Stay informed with expert analysis, investment tips and the latest trends from the financial markets.",
+              "readMoreText": "Read More",
+              "loadMoreText": "Load More",
+              "button": {
+                "text": "View All Blogs",
+                "url": "/blog"
+              },
+              "blogs": [
+                {
+                  "id": "blog-investment-strategies",
+                  "image": "/blog/1.webp",
+                  "imageAlt": "Investor analyzing stock market strategies",
+                  "date": "15 Feb 2025",
+                  "category": "MARKET INSIGHTS",
+                  "title": "Top 5 Investment Strategies for 2025",
+                  "description": "Explore effective investment strategies to navigate market opportunities in 2025 and build long-term wealth.",
+                  "url": "/blog/top-investment-strategies-for-2025",
+                  "content": {
+                    "intro": "Technology issues can be inconvenient, costly, and disruptive to your daily business operations. The good news is that most common IT problems can be prevented with simple maintenance and mindful habits. In this guide, we will share practical tips to keep your systems in good condition and avoid unexpected downtime.",
+                    "sections": [
+                      {
+                        "heading": "1. Keep Software Updated",
+                        "text": "One of the most common causes of IT problems is outdated software. Always keep your systems, plugins, and tools up to date."
+                      },
+                      {
+                        "heading": "2. Check for Security Vulnerabilities",
+                        "text": "Security breaches can be devastating. Regularly audit your infrastructure and protect your data."
+                      },
+                      {
+                        "heading": "3. Maintain Your Hardware",
+                        "text": "Your servers and devices work hard, so regular maintenance is key."
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "blog-mutual-funds-direct-stocks",
+                  "image": "/blog/2.webp",
+                  "imageAlt": "Growing investment represented by stacked coins and a plant",
+                  "date": "12 Feb 2025",
+                  "category": "INVESTMENT TIPS",
+                  "title": "Mutual Funds vs Direct Stocks: Which is Better?",
+                  "description": "Understand the key differences, benefits and risks to choose the right investment option for your financial goals.",
+                  "url": "/blog/mutual-funds-vs-direct-stocks",
+                  "content": {
+                    "intro": "Technology issues can be inconvenient, costly, and disruptive to your daily business operations. The good news is that most common IT problems can be prevented with simple maintenance and mindful habits. In this guide, we will share practical tips to keep your systems in good condition and avoid unexpected downtime.",
+                    "sections": [
+                      {
+                        "heading": "1. Keep Software Updated",
+                        "text": "One of the most common causes of IT problems is outdated software. Always keep your systems, plugins, and tools up to date."
+                      },
+                      {
+                        "heading": "2. Check for Security Vulnerabilities",
+                        "text": "Security breaches can be devastating. Regularly audit your infrastructure and protect your data."
+                      },
+                      {
+                        "heading": "3. Maintain Your Hardware",
+                        "text": "Your servers and devices work hard, so regular maintenance is key."
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "blog-read-market-trends",
+                  "image": "/blog/4.webp",
+                  "imageAlt": "Market analyst reading candlestick chart trends",
+                  "date": "08 Feb 2025",
+                  "category": "TRADING GUIDES",
+                  "title": "How to Read Market Trends Like a Pro",
+                  "description": "Learn the key indicators and chart patterns to identify market trends and make informed trading decisions.",
+                  "url": "/blog/how-to-read-market-trends",
+                  "content": {
+                    "intro": "Technology issues can be inconvenient, costly, and disruptive to your daily business operations. The good news is that most common IT problems can be prevented with simple maintenance and mindful habits. In this guide, we will share practical tips to keep your systems in good condition and avoid unexpected downtime.",
+                    "sections": [
+                      {
+                        "heading": "1. Keep Software Updated",
+                        "text": "One of the most common causes of IT problems is outdated software. Always keep your systems, plugins, and tools up to date."
+                      },
+                      {
+                        "heading": "2. Check for Security Vulnerabilities",
+                        "text": "Security breaches can be devastating. Regularly audit your infrastructure and protect your data."
+                      },
+                      {
+                        "heading": "3. Maintain Your Hardware",
+                        "text": "Your servers and devices work hard, so regular maintenance is key."
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "b4",
+                  "image": "/blog/3.webp",
+                  "date": "12 Jun 2026",
+                  "category": "TECH INSIGHTS",
+                  "title": "Top Signs You Need a Professional Tech",
+                  "description": "Learn about the most common tech issues homeowners face and simple tips to fix them before they become major problems.",
+                  "url": "/blog/top-signs-you-need-a-professional-plumber",
+                  "content": {
+                    "intro": "Technology issues can be inconvenient, costly, and disruptive to your daily business operations. The good news is that most common IT problems can be prevented with simple maintenance and mindful habits. In this guide, we will share practical tips to keep your systems in good condition and avoid unexpected downtime.",
+                    "sections": [
+                      {
+                        "heading": "1. Keep Software Updated",
+                        "text": "One of the most common causes of IT problems is outdated software. Always keep your systems, plugins, and tools up to date."
+                      },
+                      {
+                        "heading": "2. Check for Security Vulnerabilities",
+                        "text": "Security breaches can be devastating. Regularly audit your infrastructure and protect your data."
+                      },
+                      {
+                        "heading": "3. Maintain Your Hardware",
+                        "text": "Your servers and devices work hard, so regular maintenance is key."
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "b5",
+                  "image": "/blog/5.webp",
+                  "date": "12 Jun 2026",
+                  "category": "TECH INSIGHTS",
+                  "title": "How to Stop a Running System Fast",
+                  "description": "Learn about the most common tech issues homeowners face and simple tips to fix them before they become major problems.",
+                  "url": "/blog/how-to-stop-a-running-toilet-fast",
+                  "content": {
+                    "intro": "Technology issues can be inconvenient, costly, and disruptive to your daily business operations. The good news is that most common IT problems can be prevented with simple maintenance and mindful habits. In this guide, we will share practical tips to keep your systems in good condition and avoid unexpected downtime.",
+                    "sections": [
+                      {
+                        "heading": "1. Keep Software Updated",
+                        "text": "One of the most common causes of IT problems is outdated software. Always keep your systems, plugins, and tools up to date."
+                      },
+                      {
+                        "heading": "2. Check for Security Vulnerabilities",
+                        "text": "Security breaches can be devastating. Regularly audit your infrastructure and protect your data."
+                      },
+                      {
+                        "heading": "3. Maintain Your Hardware",
+                        "text": "Your servers and devices work hard, so regular maintenance is key."
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "b6",
+                  "image": "/blog/6.webp",
+                  "date": "12 Jun 2026",
+                  "category": "TECH INSIGHTS",
+                  "title": "The Dangers of System System Cleaners",
+                  "description": "Learn about the most common tech issues homeowners face and simple tips to fix them before they become major problems.",
+                  "url": "/blog/the-dangers-of-chemical-drain-cleaners",
+                  "content": {
+                    "intro": "Technology issues can be inconvenient, costly, and disruptive to your daily business operations. The good news is that most common IT problems can be prevented with simple maintenance and mindful habits. In this guide, we will share practical tips to keep your systems in good condition and avoid unexpected downtime.",
+                    "sections": [
+                      {
+                        "heading": "1. Keep Software Updated",
+                        "text": "One of the most common causes of IT problems is outdated software. Always keep your systems, plugins, and tools up to date."
+                      },
+                      {
+                        "heading": "2. Check for Security Vulnerabilities",
+                        "text": "Security breaches can be devastating. Regularly audit your infrastructure and protect your data."
+                      },
+                      {
+                        "heading": "3. Maintain Your Hardware",
+                        "text": "Your servers and devices work hard, so regular maintenance is key."
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "b7",
+                  "image": "/portfolio/app/1.webp",
+                  "date": "12 Jun 2026",
+                  "category": "TECH INSIGHTS",
+                  "title": "Winterizing Your Home Tech System",
+                  "description": "Learn about the most common tech issues homeowners face and simple tips to fix them before they become major problems.",
+                  "url": "/blog/winterizing-your-home-stock-broker-system",
+                  "content": {
+                    "intro": "Technology issues can be inconvenient, costly, and disruptive to your daily business operations. The good news is that most common IT problems can be prevented with simple maintenance and mindful habits. In this guide, we will share practical tips to keep your systems in good condition and avoid unexpected downtime.",
+                    "sections": [
+                      {
+                        "heading": "1. Keep Software Updated",
+                        "text": "One of the most common causes of IT problems is outdated software. Always keep your systems, plugins, and tools up to date."
+                      },
+                      {
+                        "heading": "2. Check for Security Vulnerabilities",
+                        "text": "Security breaches can be devastating. Regularly audit your infrastructure and protect your data."
+                      },
+                      {
+                        "heading": "3. Maintain Your Hardware",
+                        "text": "Your servers and devices work hard, so regular maintenance is key."
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "b8",
+                  "image": "/portfolio/app/2.webp",
+                  "date": "12 Jun 2026",
+                  "category": "TECH INSIGHTS",
+                  "title": "Benefits of Upgrading to a Tankless System",
+                  "description": "Learn about the most common tech issues homeowners face and simple tips to fix them before they become major problems.",
+                  "url": "/blog/benefits-of-upgrading-to-a-tankless-water-heater",
+                  "content": {
+                    "intro": "Technology issues can be inconvenient, costly, and disruptive to your daily business operations. The good news is that most common IT problems can be prevented with simple maintenance and mindful habits. In this guide, we will share practical tips to keep your systems in good condition and avoid unexpected downtime.",
+                    "sections": [
+                      {
+                        "heading": "1. Keep Software Updated",
+                        "text": "One of the most common causes of IT problems is outdated software. Always keep your systems, plugins, and tools up to date."
+                      },
+                      {
+                        "heading": "2. Check for Security Vulnerabilities",
+                        "text": "Security breaches can be devastating. Regularly audit your infrastructure and protect your data."
+                      },
+                      {
+                        "heading": "3. Maintain Your Hardware",
+                        "text": "Your servers and devices work hard, so regular maintenance is key."
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "b9",
+                  "image": "/portfolio/app/3.webp",
+                  "date": "12 Jun 2026",
+                  "category": "TECH INSIGHTS",
+                  "title": "What to Do During a Tech Emergency",
+                  "description": "Learn about the most common tech issues homeowners face and simple tips to fix them before they become major problems.",
+                  "url": "/blog/what-to-do-during-a-stock-broker-emergency",
+                  "content": {
+                    "intro": "Technology issues can be inconvenient, costly, and disruptive to your daily business operations. The good news is that most common IT problems can be prevented with simple maintenance and mindful habits. In this guide, we will share practical tips to keep your systems in good condition and avoid unexpected downtime.",
+                    "sections": [
+                      {
+                        "heading": "1. Keep Software Updated",
+                        "text": "One of the most common causes of IT problems is outdated software. Always keep your systems, plugins, and tools up to date."
+                      },
+                      {
+                        "heading": "2. Check for Security Vulnerabilities",
+                        "text": "Security breaches can be devastating. Regularly audit your infrastructure and protect your data."
+                      },
+                      {
+                        "heading": "3. Maintain Your Hardware",
+                        "text": "Your servers and devices work hard, so regular maintenance is key."
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "b10",
+                  "image": "/portfolio/ui/1.webp",
+                  "date": "12 Jun 2026",
+                  "category": "TECH INSIGHTS",
+                  "title": "Understanding Your Home Water Pressure",
+                  "description": "Learn about the most common tech issues homeowners face and simple tips to fix them before they become major problems.",
+                  "url": "/blog/understanding-your-home-water-pressure",
+                  "content": {
+                    "intro": "Technology issues can be inconvenient, costly, and disruptive to your daily business operations. The good news is that most common IT problems can be prevented with simple maintenance and mindful habits. In this guide, we will share practical tips to keep your systems in good condition and avoid unexpected downtime.",
+                    "sections": [
+                      {
+                        "heading": "1. Keep Software Updated",
+                        "text": "One of the most common causes of IT problems is outdated software. Always keep your systems, plugins, and tools up to date."
+                      },
+                      {
+                        "heading": "2. Check for Security Vulnerabilities",
+                        "text": "Security breaches can be devastating. Regularly audit your infrastructure and protect your data."
+                      },
+                      {
+                        "heading": "3. Maintain Your Hardware",
+                        "text": "Your servers and devices work hard, so regular maintenance is key."
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "b11",
+                  "image": "/portfolio/ui/2.webp",
+                  "date": "12 Jun 2026",
+                  "category": "TECH INSIGHTS",
+                  "title": "Simple Tips to Keep Your Systems Clean",
+                  "description": "Learn about the most common tech issues homeowners face and simple tips to fix them before they become major problems.",
+                  "url": "/blog/simple-tips-to-keep-your-drains-clean",
+                  "content": {
+                    "intro": "Technology issues can be inconvenient, costly, and disruptive to your daily business operations. The good news is that most common IT problems can be prevented with simple maintenance and mindful habits. In this guide, we will share practical tips to keep your systems in good condition and avoid unexpected downtime.",
+                    "sections": [
+                      {
+                        "heading": "1. Keep Software Updated",
+                        "text": "One of the most common causes of IT problems is outdated software. Always keep your systems, plugins, and tools up to date."
+                      },
+                      {
+                        "heading": "2. Check for Security Vulnerabilities",
+                        "text": "Security breaches can be devastating. Regularly audit your infrastructure and protect your data."
+                      },
+                      {
+                        "heading": "3. Maintain Your Hardware",
+                        "text": "Your servers and devices work hard, so regular maintenance is key."
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "b12",
+                  "image": "/portfolio/ui/3.webp",
+                  "date": "12 Jun 2026",
+                  "category": "TECH INSIGHTS",
+                  "title": "How to Maintain Your System for Long Life",
+                  "description": "Learn about the most common tech issues homeowners face and simple tips to fix them before they become major problems.",
+                  "url": "/blog/how-to-maintain-your-water-heater-for-long-life",
+                  "content": {
+                    "intro": "Technology issues can be inconvenient, costly, and disruptive to your daily business operations. The good news is that most common IT problems can be prevented with simple maintenance and mindful habits. In this guide, we will share practical tips to keep your systems in good condition and avoid unexpected downtime.",
+                    "sections": [
+                      {
+                        "heading": "1. Keep Software Updated",
+                        "text": "One of the most common causes of IT problems is outdated software. Always keep your systems, plugins, and tools up to date."
+                      },
+                      {
+                        "heading": "2. Check for Security Vulnerabilities",
+                        "text": "Security breaches can be devastating. Regularly audit your infrastructure and protect your data."
+                      },
+                      {
+                        "heading": "3. Maintain Your Hardware",
+                        "text": "Your servers and devices work hard, so regular maintenance is key."
+                      }
+                    ]
+                  }
+                }
+              ],
+              "sidebarCta": {
+                "title1": "Need Professional",
+                "title2": "IT Support?",
+                "description": "Our experienced team is ready to assist you with all your IT needs. Get in touch today for a quick and reliable solution.",
+                "buttonText": "Enquire Now ->",
+                "buttonUrl": "/enquiry"
+              }
+            }
+          }
+        },
+        "whyChooseUs": {
+          "variants": {
+            "StockBrokerWhyChooseUs1": {
+              "subtitle": "WHY CHOOSE US",
+              "title1": "Your Trusted Partner in",
+              "title2": "Wealth Creation",
+              "description": "We combine expertise, technology and personalized support to help you make smarter investment decisions.",
+              "features": [
+                {
+                  "id": "wc-1",
+                  "icon": "FaShieldAlt",
+                  "title": "SEBI Registered & Compliant",
+                  "description": "A transparent and trusted broking partner."
+                },
+                {
+                  "id": "wc-2",
+                  "icon": "FaChartBar",
+                  "title": "In-Depth Market Insights",
+                  "description": "Research-backed insights for better decisions."
+                },
+                {
+                  "id": "wc-3",
+                  "icon": "FaChartPie",
+                  "title": "Wide Range of Investment Options",
+                  "description": "Equity, Mutual Funds, IPOs, Derivatives and more."
+                },
+                {
+                  "id": "wc-4",
+                  "icon": "FaUsers",
+                  "title": "Dedicated Client Support",
+                  "description": "Personalized assistance at every step."
+                }
+              ],
+              "button": {
+                "text": "Know More About Us",
+                "url": "/about"
+              },
+              "imageMain": "/about/why_choose.webp",
+              "imageAlt": "ORVEXA investment advisor presenting wealth growth"
+            }
+          }
+        },
+        "contact": {
+          "variants": {
+            "StockBrokerContact1": {
+              "subtitle": "Contact Us",
+              "title1": "Get In Touch",
+              "title2": "With Us",
+              "description": "Have a question, need a quote, or want to schedule a stock broker service? Our team is here to help. Reach out to us through the form or using the contact details below.",
+              "contactInfo": {
+                "phoneTitle": "Call Us",
+                "phone": "+1 000000000",
+                "emailTitle": "Email Us",
+                "email": "info@xyz.com",
+                "addressTitle": "Our Location",
+                "address": "123 Main St, New York, NY, USA",
+                "hoursTitle": "Working Hours",
+                "hoursLine1": "Mon - Sat: 9am - 7pm",
+                "hoursLine2": "Sunday: CLOSED"
+              },
+              "form": {
+                "title": "Send Us a Message",
+                "description": "Fill out the form below and our team will get back to you shortly.",
+                "buttonText": "Send Message",
+                "servicesList": [
+                  "Residential Cleaning",
+                  "Commercial Cleaning",
+                  "Post-Construction Cleaning",
+                  "Window Cleaning",
+                  "Carpet Cleaning",
+                  "Other"
+                ]
+              },
+              "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.2528000654!2d-74.1444874457788!3d40.69766374865766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
+              "infoBoxes": [
+                {
+                  "icon": "FaClock",
+                  "title": "Working Hours",
+                  "desc1": "Mon - Sat: 9:00 AM - 7:00 PM",
+                  "desc2": "Sunday: Closed"
+                },
+                {
+                  "icon": "FaHeadset",
+                  "title": "Need Urgent Help?",
+                  "desc1": "Call us anytime for",
+                  "desc2": "emergency stock broker service."
+                },
+                {
+                  "icon": "FaFileAlt",
+                  "title": "Request a Quote",
+                  "desc1": "Get a free, no-obligation",
+                  "desc2": "estimate for your stock broker needs."
+                }
+              ],
+              "image": "/about/contact.webp"
+            }
+          }
+        },
+        "enquiry": {
+          "variants": {
+            "StockBrokerEnquiry1": {
+              "subtitle": "GET A QUOTE",
+              "title1": "Get a Quote for",
+              "title2": "Our Cleaning Services",
+              "description": "Tell us about your cleaning requirements and we'll provide you with a customized quote. It's quick, easy and completely free.",
+              "features": [
+                {
+                  "title": "Tailored to Your Needs",
+                  "description": "Get a quote based on your specific cleaning requirements."
+                },
+                {
+                  "title": "Quick & Easy",
+                  "description": "Fill out the form in just a few minutes."
+                },
+                {
+                  "title": "No Obligation",
+                  "description": "Receive a personalized quote with no commitment."
+                }
+              ],
+              "form": {
+                "title1": "Request a",
+                "title2": "Quote",
+                "description": "Fill out the form below and our team will get back to you shortly with a customized quote.",
+                "buttonText": "Submit Request ->",
+                "servicesList": [
+                  "Residential Cleaning",
+                  "Commercial Cleaning",
+                  "Post-Construction Cleaning",
+                  "Window Cleaning",
+                  "Carpet Cleaning",
+                  "Other"
+                ]
+              }
+            }
+          }
+        },
+        "Pricing": {
+          "variants": {
+            "StockBrokerPricing1": {
+              "subtitle": "// FLEXIBLE PRICING PLAN",
+              "title1": "We've Offered The Best",
+              "title2": "Pricing For You",
+              "description": "Choose a plan that fits your needs and budget. All plans include powerful features and dedicated support to help you grow.",
+              "plans": [
+                {
+                  "id": "plan-1",
+                  "name": "Basic Plan",
+                  "badge": "Basic Plan",
+                  "icon": "FaPaperPlane",
+                  "price": "149",
+                  "period": "/ Per Month",
+                  "description": "Perfect for individuals and small businesses getting started.",
+                  "features": [
+                    "Branding and design Identity",
+                    "Web site Marketing Solutions",
+                    "Free 15 GB Linux Hosting",
+                    "24/7 system Monitoring",
+                    "Unlimited Download Data"
+                  ],
+                  "footerText": "Up to 10 users + 1.99 per user",
+                  "buttonText": "Get a Quote",
+                  "buttonUrl": "/quote"
+                },
+                {
+                  "id": "plan-2",
+                  "name": "Standard Plan",
+                  "badge": "Most Popular",
+                  "icon": "FaCrown",
+                  "price": "179",
+                  "period": "/ Per Month",
+                  "description": "Ideal for growing businesses that need more power and flexibility.",
+                  "features": [
+                    "Branding and design Identity",
+                    "Web site Marketing Solutions",
+                    "Free 15 GB Linux Hosting",
+                    "24/7 system Monitoring",
+                    "Unlimited Download Data"
+                  ],
+                  "footerText": "Up to 10 users + 1.99 per user",
+                  "buttonText": "Get a Quote",
+                  "buttonUrl": "/quote",
+                  "isPopular": true
+                },
+                {
+                  "id": "plan-3",
+                  "name": "Premium Plan",
+                  "badge": "Premium Plan",
+                  "icon": "FaGem",
+                  "price": "199",
+                  "period": "/ Per Month",
+                  "description": "Advanced features for large businesses and high traffic websites.",
+                  "features": [
+                    "Branding and design Identity",
+                    "Web site Marketing Solutions",
+                    "Free 15 GB Linux Hosting",
+                    "24/7 system Monitoring",
+                    "Unlimited Download Data"
+                  ],
+                  "footerText": "Up to 10 users + 1.99 per user",
+                  "buttonText": "Get a Quote",
+                  "buttonUrl": "/quote"
+                }
+              ]
+            }
+          }
+        },
+        "Faq": {
+          "variants": {
+            "StockBrokerFaq1": {
+              "subtitle": "FAQ",
+              "title1": "Prioritize Your Site's",
+              "title2": "Safety And Security",
+              "description": "Find answers to the most common questions about our services, process, pricing and support. If you don't find what you're looking for, feel free to contact our team.",
+              "image": "/banner/ban1.jpg",
+              "faqs": [
+                {
+                  "id": "faq-1",
+                  "question": "How To Install WordPress Theme On CPanel?",
+                  "answer": "Nullam faucibus eleifend mi eu varius. Integer vel tincidunt massa, quis semper odio. Mauris et mollis quam. Nullam fringilla erat id ante commodo sodales. In maximus ultrices euismod. Vivamus porta justo ex."
+                },
+                {
+                  "id": "faq-2",
+                  "question": "Do You Have Custom Hosting Service?",
+                  "answer": "Nullam faucibus eleifend mi eu varius. Integer vel tincidunt massa, quis semper odio. Mauris et mollis quam. Nullam fringilla erat id ante commodo sodales. In maximus ultrices euismod. Vivamus porta justo ex."
+                },
+                {
+                  "id": "faq-3",
+                  "question": "Better Security And Faster Server?",
+                  "answer": "Nullam faucibus eleifend mi eu varius. Integer vel tincidunt massa, quis semper odio. Mauris et mollis quam. Nullam fringilla erat id ante commodo sodales. In maximus ultrices euismod. Vivamus porta justo ex."
+                },
+                {
+                  "id": "faq-4",
+                  "question": "Deployment Within Few Minutes",
+                  "answer": "Nullam faucibus eleifend mi eu varius. Integer vel tincidunt massa, quis semper odio. Mauris et mollis quam. Nullam fringilla erat id ante commodo sodales. In maximus ultrices euismod. Vivamus porta justo ex."
+                },
+                {
+                  "id": "faq-5",
+                  "question": "How To Backup My Website?",
+                  "answer": "Nullam faucibus eleifend mi eu varius. Integer vel tincidunt massa, quis semper odio. Mauris et mollis quam. Nullam fringilla erat id ante commodo sodales. In maximus ultrices euismod. Vivamus porta justo ex."
+                },
+                {
+                  "id": "faq-6",
+                  "question": "Can I Upgrade My Plan Later?",
+                  "answer": "Nullam faucibus eleifend mi eu varius. Integer vel tincidunt massa, quis semper odio. Mauris et mollis quam. Nullam fringilla erat id ante commodo sodales. In maximus ultrices euismod. Vivamus porta justo ex."
+                },
+                {
+                  "id": "faq-7",
+                  "question": "Do You Provide SSL Certificate?",
+                  "answer": "Nullam faucibus eleifend mi eu varius. Integer vel tincidunt massa, quis semper odio. Mauris et mollis quam. Nullam fringilla erat id ante commodo sodales. In maximus ultrices euismod. Vivamus porta justo ex."
+                },
+                {
+                  "id": "faq-8",
+                  "question": "Is There Any Hidden Charges?",
+                  "answer": "Nullam faucibus eleifend mi eu varius. Integer vel tincidunt massa, quis semper odio. Mauris et mollis quam. Nullam fringilla erat id ante commodo sodales. In maximus ultrices euismod. Vivamus porta justo ex."
+                },
+                {
+                  "id": "faq-9",
+                  "question": "How Can I Contact Support?",
+                  "answer": "Nullam faucibus eleifend mi eu varius. Integer vel tincidunt massa, quis semper odio. Mauris et mollis quam. Nullam fringilla erat id ante commodo sodales. In maximus ultrices euismod. Vivamus porta justo ex."
+                }
+              ]
+            }
+          }
+        },
+        "Quote": {
+          "variants": {
+            "StockBrokerQuote1": {
+              "subtitle": "GET A QUOTE",
+              "title1": "Get a Quote for",
+              "title2": "Your Project",
+              "description": "Share your project requirements with us and our team will get back to you with the best solution and a customized quote as per your needs.",
+              "features": [
+                {
+                  "id": "qf1",
+                  "icon": "FaRegCommentDots",
+                  "title": "Quick Response",
+                  "description": "We reply to all enquiries within 24 hours."
+                },
+                {
+                  "id": "qf2",
+                  "icon": "FaRegFileAlt",
+                  "title": "Customized Solutions",
+                  "description": "Tailored to your business requirements."
+                },
+                {
+                  "id": "qf3",
+                  "icon": "FaShieldAlt",
+                  "title": "Transparent Pricing",
+                  "description": "No hidden charges, clear and detailed quotes."
+                },
+                {
+                  "id": "qf4",
+                  "icon": "FaHeadset",
+                  "title": "Dedicated Support",
+                  "description": "Our team is always here to help you."
+                }
+              ],
+              "image": "/about/about1.jpg",
+              "floatingBox": {
+                "icon": "FaChartBar",
+                "text1": "Let's Build",
+                "text2": "Your Next Project"
+              },
+              "form": {
+                "title": "Request a ",
+                "titleHighlight": "Free Quote",
+                "description": "Fill out the form below and our experts will get back to you soon with a customized quotation.",
+                "budgets": [
+                  "₹ Under 25,000",
+                  "₹ 25,000 - 50,000",
+                  "₹ 50,000 - 1,00,000",
+                  "₹ Above 1,00,000"
+                ],
+                "buttonText": "Get a Quote"
+              }
+            }
+          }
+        }
+      },
+      "templateComponents": {
+        "shared": {
+          "Topbar": "StockBrokerTopBar1",
+          "Header": "StockBrokerHeader1",
+          "Footer": "StockBrokerFooter1"
+        },
+        "pages": {
+          "home": {
+            "components": [
+              {
+                "key": "HeroSection",
+                "component": "StockBrokerHero1"
+              },
+              {
+                "key": "AboutUs",
+                "component": "StockBrokerAboutUs1"
+              },
+              {
+                "key": "Services",
+                "component": "StockBrokerServices1"
+              },
+              {
+                "key": "WhyChooseUs",
+                "component": "StockBrokerWhyChooseUs1"
+              },
+              {
+                "key": "Process",
+                "component": "StockBrokerProcess1"
+              },
+              {
+                "key": "Cta",
+                "component": "StockBrokerCta1"
+              },
+              {
+                "key": "Testimonials",
+                "component": "StockBrokerTestimonials1"
+              },
+              {
+                "key": "Blogs",
+                "component": "StockBrokerBlogs1"
+              }
+            ]
+          },
+          "about": {
+            "components": [
+              {
+                "key": "AboutUs",
+                "component": "StockBrokerAboutUs1"
+              },
+              {
+                "key": "WhyChooseUs",
+                "component": "StockBrokerWhyChooseUs1"
+              }
+            ]
+          },
+          "services": {
+            "components": [
+              {
+                "key": "Services",
+                "component": "StockBrokerServices1"
+              },
+              {
+                "key": "WhyChooseUs",
+                "component": "StockBrokerWhyChooseUs1"
+              }
+            ]
+          },
+          "faq": {
+            "components": [
+              {
+                "key": "Faq",
+                "component": "StockBrokerFaq1"
+              }
+            ]
+          },
+          "contact": {
+            "components": [
+              {
+                "key": "Contact",
+                "component": "StockBrokerContact1"
+              }
+            ]
+          },
+          "quote": {
+            "components": [
+              {
+                "key": "Quote",
+                "component": "StockBrokerQuote1"
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "pages": {
+    "about": {
+      "components": [
+        "TopBar",
+        "Header",
+        "Breadcrumb",
+        "AboutUs",
+        "Cta",
+        "Footer"
+      ]
+    },
+    "quote": {
+      "components": [
+        "TopBar",
+        "Header",
+        "Breadcrumb",
+        "Quote",
+        "Cta",
+        "Footer"
+      ]
+    }
+  }
+}

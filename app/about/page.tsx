@@ -31,7 +31,7 @@ export default function Page() {
       <AboutPageIntro data={sectionData.AboutPageIntro?.variants?.StockBrokerAboutPageIntro1} />
 
        {/* Why Choose Us Section */}
-      <WhyChooseUsSection data={sectionData.whyChooseUs?.variants?.StockBrokerWhyChooseUs1} />
+      <WhyChooseUsSection data={sectionData.whyChooseUs?.variants?.StockBrokerAboutWhyChooseUs1} />
       {/* Process Section */}
       <ProcessSection data={sectionData.Process?.variants?.StockBrokerProcess1} />
 

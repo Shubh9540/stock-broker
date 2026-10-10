@@ -400,6 +400,7 @@ export interface WhyChooseUsData {
   description: string;
   features: WhyChooseUsFeature[];
   button: { text: string; url: string };
+  showButton: boolean;
   imageMain: string;
   imageAlt: string;
 }
@@ -694,7 +695,7 @@ export interface StockBrokerTemplateData {
         Cta?: { variants?: { StockBrokerCta1?: CtaData } };
         Blogs?: { variants?: { StockBrokerBlogs1?: BlogsData } };
         BlogDetails?: { variants?: { [key: string]: BlogDetailPageData } };
-        whyChooseUs?: { variants?: { StockBrokerWhyChooseUs1?: WhyChooseUsData } };
+        whyChooseUs?: { variants?: { StockBrokerWhyChooseUs1?: WhyChooseUsData; StockBrokerAboutWhyChooseUs1?: WhyChooseUsData } };
         contact?: { variants?: { StockBrokerContact1?: ContactData } };
         enquiry?: { variants?: { StockBrokerEnquiry1?: EnquiryData } };
       };

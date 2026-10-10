@@ -2572,6 +2572,46 @@
                 "text": "Know More About Us",
                 "url": "/about"
               },
+              "showButton": true,
+              "imageMain": "/about/why_choose.webp",
+              "imageAlt": "ORVEXA investment advisor presenting wealth growth"
+            },
+            "StockBrokerAboutWhyChooseUs1": {
+              "subtitle": "WHY CHOOSE US",
+              "title1": "Your Trusted Partner in",
+              "title2": "Wealth Creation",
+              "description": "We combine expertise, technology and personalized support to help you make smarter investment decisions.",
+              "features": [
+                {
+                  "id": "about-wc-1",
+                  "icon": "FaShieldAlt",
+                  "title": "SEBI Registered & Compliant",
+                  "description": "A transparent and trusted broking partner."
+                },
+                {
+                  "id": "about-wc-2",
+                  "icon": "FaChartBar",
+                  "title": "In-Depth Market Insights",
+                  "description": "Research-backed insights for better decisions."
+                },
+                {
+                  "id": "about-wc-3",
+                  "icon": "FaChartPie",
+                  "title": "Wide Range of Investment Options",
+                  "description": "Equity, Mutual Funds, IPOs, Derivatives and more."
+                },
+                {
+                  "id": "about-wc-4",
+                  "icon": "FaUsers",
+                  "title": "Dedicated Client Support",
+                  "description": "Personalized assistance at every step."
+                }
+              ],
+              "button": {
+                "text": "Know More About Us",
+                "url": "/about"
+              },
+              "showButton": false,
               "imageMain": "/about/why_choose.webp",
               "imageAlt": "ORVEXA investment advisor presenting wealth growth"
             }
@@ -2827,7 +2867,7 @@
               },
               {
                 "key": "WhyChooseUs",
-                "component": "StockBrokerWhyChooseUs1"
+                "component": "StockBrokerAboutWhyChooseUs1"
               },
               {
                 "key": "Cta",

@@ -53,13 +53,15 @@ export const WhyChooseUsSection = ({ data }: WhyChooseUsSectionProps) => {
             {data.description}
           </p>
 
-          <Link
-            href={data.button.url}
-            className="mt-6 inline-flex w-full items-center justify-center gap-4 rounded-lg bg-[#0758c9] px-6 py-3.5 text-sm font-bold text-white shadow-lg shadow-[#0758c9]/20 transition-colors duration-300 hover:bg-[#0b6cf0] sm:w-auto"
-          >
-            {data.button.text}
-            <FaArrowRight className="text-xs" />
-          </Link>
+          {data.showButton && (
+            <Link
+              href={data.button.url}
+              className="mt-6 inline-flex w-full items-center justify-center gap-4 rounded-lg bg-[#0758c9] px-6 py-3.5 text-sm font-bold text-white shadow-lg shadow-[#0758c9]/20 transition-colors duration-300 hover:bg-[#0b6cf0] sm:w-auto"
+            >
+              {data.button.text}
+              <FaArrowRight className="text-xs" />
+            </Link>
+          )}
         </div>
 
         <div className="flex flex-col gap-5 rounded-2xl bg-white/80 p-4 backdrop-blur-sm sm:p-6 lg:bg-transparent lg:p-0 lg:backdrop-blur-none">
